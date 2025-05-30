@@ -19,6 +19,7 @@ import win32clipboard as cp
 
 #-----------OTRAS--------------------
 from json.decoder import JSONDecodeError
+import socket
 
 ERROR = "HA OCURRIDO UN ERROR EN LA FUNCION "
 SIEBEL = 'https://crm.izzi.mx/siebel/app/ecommunications/esn'
@@ -35,10 +36,17 @@ def start_webdriver():
         options = webdriver.ChromeOptions()
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
-        driver = webdriver.Chrome(
-                                executable_path =r"C:\Rpa_CX_Bots_Proxmox\Rpa_ExtraccionesManuales\\driver_chrome\\chromedriver.exe",
-                                options=options
-                                )
+        host = socket.gethostname()
+        ip = socket.gethostbyname(host)
+        print(ip)
+        print(type(ip))
+
+        if '192.168.61.' in ip: driver = webdriver.Chrome(options=options)
+        else:
+            driver = webdriver.Chrome(
+                                    executable_path =r"C:\\Rpa_CX_Bots_Proxmox\\chromedriver.exe",
+                                    options=options
+                                    )
         sleep(3)
         print('▬ Webdriver abierto correctamente')
         return driver
