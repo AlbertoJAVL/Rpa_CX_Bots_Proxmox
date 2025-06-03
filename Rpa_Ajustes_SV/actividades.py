@@ -467,7 +467,7 @@ def aplicacionAjuste(driver, fechaCompletado, monto, no_cuenta, tipoAjuste,motiv
         validacion, res2 = ajusteTipificado(driver, motivoAjuste, fecha, fechaCompletado)
         if res2 != 'Sin ajustes Previos':
             print(f'-> Resultado de ajuste previo: {res2}')
-            if res2 == '': return False, 'No aplica ajuste previo', '', ''
+            if res2 == '': return False, 'No aplica ajuste reciente', '', ''
             elif res2 == 'Registro pendiente': return False, 'Registro pendiente', '', ''
             elif 'No aplica' in res2: return False, res2, '',''
             else: 

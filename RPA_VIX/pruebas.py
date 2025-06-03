@@ -1,5 +1,4 @@
-prueba = ['hola', 'adios', 'bye']
-
-prueba2 = 'bye'
-
-print(prueba2[0])
+import selenium
+from selenium import webdriver
+print(selenium.__version__)
+print(webdriver.__version__)

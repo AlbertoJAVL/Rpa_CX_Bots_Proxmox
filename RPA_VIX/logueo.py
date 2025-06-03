@@ -36,7 +36,7 @@ def start_webdriver():
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         options.add_argument('--disable-gpu')
         options.add_argument('--window-size=1024,768')
-
+        
         host = socket.gethostname()
         ip = socket.gethostbyname(host)
         print(ip)
