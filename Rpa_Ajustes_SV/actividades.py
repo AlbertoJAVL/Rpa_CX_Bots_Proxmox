@@ -8,6 +8,7 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.alert import Alert
 from selenium.common.exceptions import WebDriverException,NoAlertPresentException
 import autoit as it
+import logging
 #-------------System-------------------#
 from time import sleep
 import os
@@ -93,7 +94,10 @@ def obtencionColumna(driver, nombreColumna, path, path2 = False):
             else:
                 if contador == 100: return False
 
-        except Exception as e: print(str(e)); return False
+        except Exception as e: 
+            logger = logging.getLogger("rpa")
+            logger.exception("Fallo en orden %s: %s", e) 
+            print(str(e));return False
 
 def ingresoBusquedaAjuste(driver, campoBusqueda, busqueda, pathColumnasBAjuste, pathColumnasBAjuste2, pathColumnasBAInput, pathColumnasBAInput2, pathColumnasBAInput3):
     posicion = obtencionColumna(driver, campoBusqueda, pathColumnasBAjuste, pathColumnasBAjuste2)
@@ -177,8 +181,8 @@ def generacionCN(driver):
 
         #Categoria
         textoLabelCategoriaCN = 'Categoria'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
-        categoriaCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']")
+        driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
+        categoriaCN = driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelCategoriaCN + "']")
         categoriaCN.clear()
         categoriaCN.send_keys('SERVICIOS')
         categoriaCN.send_keys(Keys.RETURN)
@@ -186,8 +190,8 @@ def generacionCN(driver):
 
         #Motivo
         textoLabelMotivoCN = 'Motivo'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']").click()
-        motivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']")
+        driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelMotivoCN + "']").click()
+        motivoCN = driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelMotivoCN + "']")
         motivoCN.clear()
         motivoCN.send_keys('ACLARACION DE ESTADO DE CUENTA')
         motivoCN.send_keys(Keys.RETURN)
@@ -195,8 +199,8 @@ def generacionCN(driver):
         sleep(3)
         #Submotivo
         textoLabelSubMotivoCN = 'Submotivo'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
-        subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']")
+        driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
+        subMotivoCN = driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelSubMotivoCN + "']")
         subMotivoCN.clear()
         subMotivoCN.send_keys('AJUSTE FACTURACION')
         subMotivoCN.send_keys(Keys.RETURN)
@@ -205,8 +209,8 @@ def generacionCN(driver):
         #Solucion
         try:
             textoLabelsolucionCN = 'Solución'
-            driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']").click()
-            solucionCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']")
+            driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelsolucionCN + "']").click()
+            solucionCN = driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelsolucionCN + "']")
             solucionCN.clear()
             solucionCN.send_keys('APLICA AJUSTE')
             solucionCN.send_keys(Keys.RETURN)
@@ -218,14 +222,14 @@ def generacionCN(driver):
                 alerta.accept()
                 error = 'No aplica caso de negocio ya tipificado'
                 textoLabelCancelarCN = 'Casos de negocio Applet de formulario:Cancelar'
-                driver.find_element_by_xpath("//button[@aria-label='" + textoLabelCancelarCN + "']").click()
+                driver.find_element(By.XPATH,"//button[@aria-label='" + textoLabelCancelarCN + "']").click()
                 return False, error,'-'
         
         sleep(3)
         #Comentario
         textoLabelcomentarioCN = 'Comentarios'
-        driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
-        comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
+        driver.find_element(By.XPATH,"//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
+        comentarioCN = driver.find_element(By.XPATH,"//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
         comentarioCN.clear()
         comentarioCN.send_keys('CN INFORMATIVO APLICACON AJUSTE BOT')
         comentarioCN.send_keys(Keys.RETURN)
@@ -233,16 +237,16 @@ def generacionCN(driver):
         sleep(3)
         #Motivo del Cliente
         textoLabelmotivoCierreCN = 'Motivo del Cierre'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
-        motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
+        driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
+        motivoCierreCN = driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
         motivoCierreCN.clear()
         motivoCierreCN.send_keys('RAC INFORMA Y SOLUCIONA')
         motivoCierreCN.send_keys(Keys.RETURN)
         
         sleep(3)
         textoLabelmotivoClienteCN = 'Motivo Cliente'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
-        motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
+        driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
+        motivoClienteCN = driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
         motivoClienteCN.clear()
         motivoClienteCN.send_keys('CONVENIO COBRANZA')
         motivoClienteCN.send_keys(Keys.RETURN)
@@ -258,7 +262,7 @@ def generacionCN(driver):
         sleep(6)
         print('Obteniendo cn generado ')
 
-        cnGenerado = driver.find_element_by_xpath("/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[3]/td[6]/div/span/div")
+        cnGenerado = driver.find_element(By.XPATH,"/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[3]/td[6]/div/span/div")
         cnGenerado = cnGenerado.text
         print('CN generado: ', cnGenerado)
 
@@ -276,6 +280,8 @@ def generacionCN(driver):
 
 
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e)  
         print(e)
         error = 'Error al crear cn'
         return False,error, '-'
@@ -335,7 +341,9 @@ def validacionAjusteUsuario(driver, fechaCompletado):
             
         else: return False, 'Externo'
 
-    except Exception as e: 
+    except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e)  
         print(e)
         return False, 'Inconsistencia siebel: Falla Lectura Usuario'
 
@@ -353,7 +361,10 @@ def profAjuste(driver, pathColumnasBAInput, posicionNumeroajuste, replaceVal, fe
             if 'No aplica' in estadoValidacion: return estadoValidacion
             else: return ''
 
-    except Exception as e: return 'Registro pendiente'
+    except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
+        return 'Registro pendiente'
 
 
 def ajusteTipificado(driver, convenio, fecha, fechaCompletado):
@@ -420,6 +431,8 @@ def ajusteTipificado(driver, convenio, fecha, fechaCompletado):
                 except: return False, 'Sin ajustes Previos'
         
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         print(e)
         return False, 'Registro pendiente'
 
@@ -473,7 +486,7 @@ def aplicacionAjuste(driver, fechaCompletado, monto, no_cuenta, tipoAjuste,motiv
             else: 
                 sleep(5)
                 textoLabelConsultarA = 'Pantalla Única de Consulta Applet de formulario:Consulta de Saldos'
-                driver.find_element_by_xpath("//button[@aria-label='" + textoLabelConsultarA + "']").click()
+                driver.find_element(By.XPATH,"//button[@aria-label='" + textoLabelConsultarA + "']").click()
                 consulta = True
                 sleep(30)
                 return True, '', res2, 'Aplicado'
@@ -583,13 +596,14 @@ def aplicacionAjuste(driver, fechaCompletado, monto, no_cuenta, tipoAjuste,motiv
                 try:
                     # driver.find_element(By.XPATH, pantalla_consultad['consultaSaldo']).click()
                     textoLabelConsultarA = 'Pantalla Única de Consulta Applet de formulario:Consulta de Saldos'
-                    driver.find_element_by_xpath("//button[@aria-label='" + textoLabelConsultarA + "']").click()
+                    driver.find_element(By.XPATH,"//button[@aria-label='" + textoLabelConsultarA + "']").click()
                     consulta = True
                     sleep(30)
                 except:
                     sleep(5)
                     contadorActivo += 1
                     if contadorActivo == 6:
+                        print("no se encontro consulta de saldos actualizando a error")
                         error = 'Error al crear cn'
                         consulta = True
                         print(error)
@@ -599,6 +613,8 @@ def aplicacionAjuste(driver, fechaCompletado, monto, no_cuenta, tipoAjuste,motiv
 
 
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         print(e)
 
         if 'connection aborted' in str(e).lower():

@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.alert import Alert
+import logging
 
 # ----------SYSTEM -------------------
 from time import sleep
@@ -57,6 +58,8 @@ def my_copy(driver):
             return False
         return texto
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         mensaje = f"{ERROR} my_copy. ERROR ENCONTRADO {e}"
         print(mensaje)
         return False
@@ -86,6 +89,8 @@ def my_copy_by_xpath(driver, xpath , name = None):
 
         return texto
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         mensaje = f"{ERROR} my_copy_by_xpath. ERROR ENCONTRADO {e}"
         print(mensaje)
         return ''
@@ -163,6 +168,8 @@ def open_item_selenium_wait(driver, id = None, name = None, xpath = None, clase 
                     return True
         except Exception as e:
             print(f'No se pudo abrir el item especificado')
+            logger = logging.getLogger("rpa")
+            logger.exception("Fallo en orden %s: %s", e) 
             description_error('06','open_item_selenium_wait',e, id = id, name = name , xpath = xpath)
             return False
 
@@ -174,6 +181,8 @@ def AlertaSaldoVencido(driver):
         print('SI hubo alerta')
         sleep(3)
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         print('NO hubo alerta')
 
 def my_send_keys(driver, key, repeticiones = 1):
@@ -262,5 +271,7 @@ def pantalla_unica_consulta(driver, cuenta):
 
     except Exception as e:
         print(f'No se pudo entrar a Pnatlla Unica de Consulta')
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         description_error('08','pantalla_unica_consulta.',e)
         return True, '',''

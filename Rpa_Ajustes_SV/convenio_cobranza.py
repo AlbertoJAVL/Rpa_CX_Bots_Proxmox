@@ -7,6 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
 import autoit as it
 import re
+from logging.handlers import RotatingFileHandler
+import os, gc, socket, logging, psutil
 #-------------System-------------------#
 from time import sleep
 import os
@@ -156,6 +158,8 @@ def busquedaCNTipificado(driver, busqueda, meses):
             return True, error
             
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e)
         print(e)
         return False, ''
 
@@ -208,6 +212,8 @@ def validacion_cuenta_convenio_cobranza(driver, no_cuenta, no_caso, datos, meses
             try:
                 saldo_pendiente = float(saldo_pendiente)
             except Exception as e:
+                logger = logging.getLogger("rpa")
+                logger.exception("Fallo en orden %s: %s", e)
                 print(f'No se pudo convertir rl saldo a numero: {e}')
                 error = 'saldo invalido'
                 print('Error ', error)
@@ -501,6 +507,8 @@ def aplicacion_ajuste_convenio_cobranza(driver, caso_negocio, monto):
             it.send('{ENTER}')
             sleep(5)
         except Exception as e:
+            logger = logging.getLogger("rpa")
+            logger.exception("Fallo en orden %s: %s", e)  
             print('Tercera excepcion encontrada: ', e)
             error = 'Ingresar Ajuste'
             return False, error

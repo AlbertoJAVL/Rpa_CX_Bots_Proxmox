@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
 import autoit as it
-import re
+import re, logging
 #-------------System-------------------#
 from time import sleep
 import os
@@ -145,6 +145,8 @@ def validacion_cuenta_fallas_servicio(driver, no_cuenta, no_caso, numero_pago):
         return True, 'listo', ajuste, ''
 
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         print(f'ERROR ajustando el cargo extemporaneo. Caso NO. {no_caso}. CUENTA: {no_cuenta}')
         description_error('11','validacion_cuenta_cargo_extemporaneo',e)
         print('Error ', e)

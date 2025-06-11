@@ -1,27 +1,22 @@
-import os
-import shutil
+import os, shutil, logging
+from pathlib import Path
+import logging
+
+logger = logging.getLogger("rpa.temp")
+EXCLUDE_EXT = {".log", ".tmp", ".crdownload"}
 
 def eliminar_archivos():
-    # Obtiene la ruta de la carpeta %temp%
-    temp_folder = os.environ['TEMP']
-
-    try:
-        # Listar los archivos en la carpeta %temp%
-        temp_files = os.listdir(temp_folder)
-
-        # Eliminar solo los archivos que no están siendo utilizados por otros procesos
-        for temp_file in temp_files:
-            temp_file_path = os.path.join(temp_folder, temp_file)
-            try:
-                # Intentar eliminar el archivo
-                if os.path.isfile(temp_file_path):
-                    os.remove(temp_file_path)
-                elif os.path.isdir(temp_file_path):
-                    shutil.rmtree(temp_file_path)  # Si es un directorio, elimínalo recursivamente
-            except Exception as e:
-                print(f"No se pudo eliminar {temp_file}: {str(e)}")
-
-        print("Archivos no utilizados eliminados correctamente en la carpeta %temp%.")
-
-    except Exception as e:
-        print(f"Se produjo un error al eliminar archivos en la carpeta %temp%: {str(e)}")
+    """Elimina archivos y carpetas en %TEMP% que no estén en uso."""
+    temp_folder = Path(os.environ["TEMP"])
+    for entry in temp_folder.iterdir():
+        try:
+            if entry.suffix.lower() in EXCLUDE_EXT:
+                continue
+            if entry.is_file():
+                entry.unlink()
+            else:
+                shutil.rmtree(entry, ignore_errors=True)
+        except Exception as e:
+            logger = logging.getLogger("rpa")
+            logger.exception("Fallo en orden %s: %s", e) 
+            logger.debug("No se pudo eliminar %s: %s", entry, e)

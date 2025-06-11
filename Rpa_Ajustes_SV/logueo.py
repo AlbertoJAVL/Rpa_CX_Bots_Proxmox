@@ -13,7 +13,7 @@ import Services.ApiCyberHubOrdenes as api
 # ----------SYSTEM -------------------
 from time import sleep
 import win32clipboard as cp
-import socket
+import socket, logging
 
 #-----------OTRAS--------------------
 from json.decoder import JSONDecodeError
@@ -30,27 +30,26 @@ def start_webdriver():
     '''
     try:
         
-        options = webdriver.ChromeOptions()
-        options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        options.add_argument('--disable-gpu')
-        options.add_argument('--window-size=1024,768')
+        opts = webdriver.ChromeOptions()
+        opts.add_experimental_option('excludeSwitches', ['enable-logging'])
+        opts.add_argument('--window-size=1024,768')
+        opts.add_argument("--disable-gpu")
+        opts.add_argument("--no-sandbox")
+        opts.add_argument("--blink-settings=imagesEnabled=false")
         
         host = socket.gethostname()
         ip = socket.gethostbyname(host)
         print(ip)
         print(type(ip))
 
-        if '192.168.61.' in ip: driver = webdriver.Chrome(options=options)
-        else:
-            driver = webdriver.Chrome(
-                                    executable_path =r"C:\\Rpa_CX_Bots_Proxmox\\chromedriver.exe",
-                                    options=options
-                                    )
+        driver = webdriver.Chrome(options=opts)
                                     
         sleep(3)
         print('▬ Webdriver abierto correctamente')
         return driver
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         description_error('01','start_webdriver',e)
 
 def login_siebel(user, password):
@@ -122,6 +121,8 @@ def login_siebel(user, password):
         #sleep(10000) #Borrar después
         return driver, True
     except Exception as e:
+        logger = logging.getLogger("rpa")
+        logger.exception("Fallo en orden %s: %s", e) 
         description_error('02','login_siebel',e)
         driver.close()
 

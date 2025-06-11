@@ -215,22 +215,23 @@ Devuelve:
 def update_cn(datos):
 
     try:
-        response = requests.put(urlCN, data=datos)
-        if response.status_code == 200:
-            responseApi = json.loads(response.text)
-            return responseApi
+        print("x")
+        # response = requests.put(urlCN, data=datos)
+        # if response.status_code == 200:
+        #     responseApi = json.loads(response.text)
+        #     return responseApi
 
-        elif response.status_code == 401:
-            return print("Unauthorized")
+        # elif response.status_code == 401:
+        #     return print("Unauthorized")
 
-        elif response.status_code == 404:
-            return print("Not Found")
+        # elif response.status_code == 404:
+        #     return print("Not Found")
 
-        elif response.status_code == 500:
-            return print("Internal Server Error")
+        # elif response.status_code == 500:
+        #     return print("Internal Server Error")
 
     except JSONDecodeError:
-            return response.body_not_json
+            print("x")
 
 ''' CUANDO EL CASO DE NEGOCIO SE CERRÓ
 Recibe: 
