@@ -178,7 +178,7 @@ def generacionCN(driver):
         if elemento_monto_Ajuste == False: 
             if 'Inconsistencia' in res: return False, res, ''
             else: return False, 'Registro pendiente', ''
-
+        ################################
         #Categoria
         textoLabelCategoriaCN = 'Categoria'
         driver.find_element(By.XPATH,"//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
