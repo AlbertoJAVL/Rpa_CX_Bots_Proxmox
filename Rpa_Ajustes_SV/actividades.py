@@ -191,8 +191,8 @@ def generacionCN(driver):
         motivoCN.clear()
         motivoCN.send_keys('ACLARACION DE ESTADO DE CUENTA')
         motivoCN.send_keys(Keys.RETURN)
-        
         sleep(3)
+
         #Submotivo
         textoLabelSubMotivoCN = 'Submotivo'
         driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
@@ -220,6 +220,7 @@ def generacionCN(driver):
                 textoLabelCancelarCN = 'Casos de negocio Applet de formulario:Cancelar'
                 driver.find_element_by_xpath("//button[@aria-label='" + textoLabelCancelarCN + "']").click()
                 return False, error,'-'
+            else: return False, f'No aplica: {textoAlerta}', '-'
         
         sleep(3)
         #Comentario
@@ -228,10 +229,9 @@ def generacionCN(driver):
         comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
         comentarioCN.clear()
         comentarioCN.send_keys('CN INFORMATIVO APLICACON AJUSTE BOT')
-        comentarioCN.send_keys(Keys.RETURN)
         
         sleep(3)
-        #Motivo del Cliente
+        #Motivo del Cierre
         textoLabelmotivoCierreCN = 'Motivo del Cierre'
         driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
         motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
@@ -240,6 +240,7 @@ def generacionCN(driver):
         motivoCierreCN.send_keys(Keys.RETURN)
         
         sleep(3)
+        #Motivo Cliente
         textoLabelmotivoClienteCN = 'Motivo Cliente'
         driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
         motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
@@ -247,20 +248,24 @@ def generacionCN(driver):
         motivoClienteCN.send_keys('CONVENIO COBRANZA')
         motivoClienteCN.send_keys(Keys.RETURN)
         
-        sleep(3)
-        #Estado
-        driver.find_element(By.XPATH, casos_negocio['cnEstado']).click()
-        sleep(10)
-        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]/div/span').click()
-        sleep(10)
-        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/ul[16]/li[7]/div').click()
-
-        sleep(6)
-        print('Obteniendo cn generado ')
-
+        <<<<<print('Obteniendo cn generado ')
         cnGenerado = driver.find_element_by_xpath("/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[3]/td[6]/div/span/div")
         cnGenerado = cnGenerado.text
         print('CN generado: ', cnGenerado)
+        
+        sleep(3)
+        #Estado
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]').click()
+        sleep(10)
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]/div/span').click()
+        sleep(5)
+        pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
+        posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+        if posicion == False: return 1, 'Error Pantalla NO Carga', '-', '-'
+        
+
+        sleep(6)
+
 
         elemento_monto_Ajuste, res = cargandoElemento(driver, 'button', 'aria-label', 'Casos de negocio Applet de formulario:Guardar')
         if elemento_monto_Ajuste == False:

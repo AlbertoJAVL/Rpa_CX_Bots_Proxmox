@@ -40,43 +40,131 @@ def ingresarDatos(driver, input, xpath):
         campo = driver.find_element(By.XPATH, xpath + '/div/textarea')
         campo.clear()                   
         campo.send_keys(input)         
-        campo.send_keys(Keys.RETURN)    
+        campo.send_keys(Keys.RETURN)   
 
+def cargandoElemento(driver, elemento, atributo, valorAtributo, path = False):
+
+    cargando = True
+    contador = 0
+
+    while cargando:
+
+        sleep(3)
+        try: 
+            print('Validando posible warning')
+            contador += 1
+            alert = Alert(driver)
+            alert_txt = alert.text
+            print(f'♦ {alert_txt} ♦')
+            if 'Cuenta en cobertura FTTH,' in alert_txt: 
+                alert.accept()
+                print('aqui')
+                # return True, ''
+            else: return False, f'Inconsistencia Siebel: {alert_txt}'            
+        
+        except:
+            try:
+                print('Esperando a que el elemento cargue')
+                if path == False: 
+                    driver.find_element(By.XPATH, f"//{elemento}[@{atributo}='{valorAtributo}']").click()
+                    return True, ''
+                else: 
+                    print('aqui')
+                    driver.find_element(By.XPATH, path).click()
+                    return True, ''
+            except:
+                print('Pantalla Cargando')
+                if contador == 70: return False, ''
+    
+def obtencionColumna(driver, nombreColumna, path):
+
+    buscandoColumna = True
+    contador = 1
+
+    while buscandoColumna:
+
+        try:
+            pathF = path.replace('{contador}', str(contador))
+            nameColumna = driver.find_element(By.XPATH, pathF)
+            nameColumna = driver.execute_script("return arguments[0].textContent;", nameColumna)
+
+            if nombreColumna in nameColumna: return str(contador)
+            else:
+                contador += 1
+                if contador == 100: return False
+
+        except: return False
 
 def generacionCN(driver, cn, ajuste):
 
     try:
         sleep(30)
-
+        
         text_box('INICIA CREACION CASO DE NEGOCIO', '▬')
-
         #Creacion CN
-        driver.find_element(By.XPATH, casos_negocio['nuevo']).click()
-        sleep(3)
+        btn_creacion_Ajuste, res = cargandoElemento(driver, 'button', 'aria-label', 'Casos de Negocio Applet de lista:Nuevo')
+        if btn_creacion_Ajuste == False: 
+            if 'Inconsistencia' in res: return False, res, ''
+            else: return False, 'Registro pendiente', ''
+
+        elemento_monto_Ajuste, res = cargandoElemento(driver, 'input', 'aria-label', 'Solución')
+        if elemento_monto_Ajuste == False: 
+            if 'Inconsistencia' in res: return False, res, ''
+            else: return False, 'Registro pendiente', ''
+
         #Categoria
-        ingresarDatos(driver, 'SERVICIOS', casos_negocio['cnCategoria'])
+        textoLabelCategoriaCN = 'Categoria'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
+        categoriaCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']")
+        categoriaCN.clear()
+        categoriaCN.send_keys('SERVICIOS')
+        categoriaCN.send_keys(Keys.RETURN)
+        print('♦ Categoria Ingresada ♦')
         sleep(3)
+
         #Motivo
-        ingresarDatos(driver, 'ACLARACION DE ESTADO DE CUENTA', casos_negocio['cnMotivo'])
+        textoLabelMotivoCN = 'Motivo'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']").click()
+        motivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']")
+        motivoCN.clear()
+        motivoCN.send_keys('ACLARACION DE ESTADO DE CUENTA')
+        motivoCN.send_keys(Keys.RETURN)
+        print('♦ Motivo Ingresado ♦')
         sleep(3)
+
         #Submotivo
-        ingresarDatos(driver, 'AJUSTE FACTURACION', casos_negocio['cnSubMotivo'])
+        textoLabelSubMotivoCN = 'Submotivo'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
+        subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']")
+        subMotivoCN.clear()
+        subMotivoCN.send_keys('AJUSTE FACTURACION')
+        subMotivoCN.send_keys(Keys.RETURN)
+        print('♦ Submotivo Ingresado ♦')
         sleep(3)
+
         #Solucion
         try:
-            ingresarDatos(driver, 'APLICA AJUSTE', casos_negocio['cnSolucion'])
+            textoLabelsolucionCN = 'Solución'
+            driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']").click()
+            solucionCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']")
+            solucionCN.clear()
+            solucionCN.send_keys('APLICA AJUSTE')
+            solucionCN.send_keys(Keys.RETURN)
         except Exception:
             try:
-                # alert = driver.switch_to.alert
-                # print('alerta detectada, texto de alerta: ', alert.text)
-                # alert.accept()
-                error = 'No Aplica CN Abierto'
-                print(error)    
-                sleep(4)
-                driver.find_element(By.XPATH, casos_negocio['cancelarCN']).click()
-                return False, error, '-'
-            except NoAlertPresentException:
-                print('No se encontro alerta')
+                alerta = Alert(driver)
+                textoAlerta = alerta.text
+
+                if 'Ya existe un Caso de Negocio en proceso con esta tipificacion' in textoAlerta:
+                    alerta.accept()
+                    error = 'No aplica caso de negocio ya tipificado'
+                    textoLabelCancelarCN = 'Casos de negocio Applet de formulario:Cancelar'
+                    driver.find_element_by_xpath("//button[@aria-label='" + textoLabelCancelarCN + "']").click()
+                    return False, 'Error CN Previo','-'
+                else: return False, f'Error Warning: {textoAlerta}', '-'
+            except: pass
+
+
         sleep(3)
         #Comentario
         fechaActual = datetime.date.today()
@@ -84,31 +172,52 @@ def generacionCN(driver, cn, ajuste):
         ajuste = ajuste
         cnSeguimiento = cn
         comentario  = 'Fecha: {}\nHora: {}\nMotvio: Seguimiento a convenio de cobranza\nCantidad Ajustada: {}\nCN de Seguimiento: {}\n GNERADO POR BOT'.format(fechaActual,horaActual,ajuste, cnSeguimiento)
-        ingresarDatos(driver, comentario, casos_negocio['cnComentario'])
+        textoLabelcomentarioCN = 'Comentarios'
+        driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
+        comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
+        comentarioCN.clear()
+        comentarioCN.send_keys(comentario)
+
+        # Obtencion CN
+        noCN = driver.find_element(By.XPATH, f'//a[@name="SRNumber"]')
+        noCN = noCN.text
+        print(f'♦ CN Generado: {noCN} ♦')
         sleep(3)
+
         #Motivo del Cliente
-        ingresarDatos(driver, 'RAC INFORMA Y SOLUCIONA', casos_negocio['cnMotivoCierre'])
+        textoLabelmotivoCierreCN = 'Motivo del Cierre'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
+        motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
+        motivoCierreCN.clear()
+        motivoCierreCN.send_keys('RAC INFORMA Y SOLUCIONA')
+        motivoCierreCN.send_keys(Keys.RETURN)
+        print('♦ Campo Motivo Cierre ♦')
+        
         sleep(3)
-        ingresarDatos(driver, 'CONVENIO COBRANZA', casos_negocio['cnMotivoCliente'])
+        textoLabelmotivoClienteCN = 'Motivo Cliente'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
+        motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
+        motivoClienteCN.clear()
+        motivoClienteCN.send_keys('CONVENIO COBRANZA')
+        motivoClienteCN.send_keys(Keys.RETURN)
+        print('♦ Campo Motivo Cliente ♦')
         sleep(3)
+        
         #Estado
-        # ingresarDatos(driver, 'Cerrado', casos_negocio['cnEstado'])
         driver.find_element(By.XPATH, casos_negocio['cnEstado']).click()
-        sleep(2)
-        driver.find_element(By.XPATH, casos_negocio['cnEstadoListado']).click()
-        sleep(6)
-        driver.find_element(By.XPATH, casos_negocio['cnCerrado']).click()
+        sleep(10)
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]/div/span').click()
+        sleep(5)
+        pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
+        posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+        if posicion == False: return False, 'Error Pantalla NO Carga', '-'
+        driver.find_element(By.XPATH, pathEstadoCNOpc.replace('{contador}', posicion)).click()
+        sleep(5)
 
-        sleep(6)
-        print('Obteniendo cn generado ')
+        driver.find_element(By.XPATH, "//button[@aria-label='Casos de negocio Applet de formulario:Guardar']").click()
+        print('CN Guardado')
 
-        cnGenerado = driver.find_element(By.XPATH, casos_negocio['numroCN'])
-        cnGenerado = cnGenerado.text
-        print('CN generado: ', cnGenerado)
-
-        driver.find_element(By.XPATH, casos_negocio['guardarCN']).click()
-
-        return True, '', cnGenerado
+        return True, '', noCN
 
 
     except Exception as e:

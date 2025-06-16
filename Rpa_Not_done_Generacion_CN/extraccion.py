@@ -459,6 +459,71 @@ def ordenesServicio(driver, datos):
                 print('SE CANCELO LA ORDEN')
                 return True, 'Orden Cancelada'
 
+def cargandoElemento(driver, elemento, atributo, valorAtributo, path = False):
+
+    cargando = True
+    contador = 0
+
+    while cargando:
+
+        sleep(3)
+        try: 
+            print('Validando posible warning')
+            contador += 1
+            alert = Alert(driver)
+            alert_txt = alert.text
+            print(f'♦ {alert_txt} ♦')
+            if 'Cuenta en cobertura FTTH,' in alert_txt: 
+                alert.accept()
+                print('aqui')
+                # return True, ''
+            else: return False, f'Inconsistencia Siebel: {alert_txt}'            
+        
+        except:
+            try:
+                print('Esperando a que el elemento cargue')
+                if path == False: 
+                    driver.find_element(By.XPATH, f"//{elemento}[@{atributo}='{valorAtributo}']").click()
+                    return True, ''
+                else: 
+                    print('aqui')
+                    driver.find_element(By.XPATH, path).click()
+                    return True, ''
+            except:
+                print('Pantalla Cargando')
+                if contador == 70: return False, ''
+    
+def obtencionColumna(driver, nombreColumna, path, path2 = False):
+
+    buscandoColumna = True
+    contador = 0
+
+    while buscandoColumna:
+
+        try:
+            contador += 1
+            nameColumna2 = 'False'
+            pathF = path.replace('{contador}', str(contador))
+
+            try:
+                nameColumna = driver.find_element(By.XPATH, pathF)
+                nameColumna = driver.execute_script("return arguments[0].textContent;", nameColumna)
+                print(f'path1: {nameColumna}')
+            except: nameColumna = 'False'
+
+            if path2 != False: 
+                try:
+                    pathF2 = path2.replace('{contador}', str(contador))
+                    nameColumna2 = driver.find_element(By.XPATH, pathF2)
+                    nameColumna2 = driver.execute_script("return arguments[0].textContent;", nameColumna2)
+                except: nameColumna2 = 'False'
+                print(f'path2: {nameColumna2}')
+
+            if nombreColumna in nameColumna or nombreColumna in nameColumna2: return str(contador)
+            else:
+                if contador == 100: return False
+
+        except Exception as e: print(str(e)); return False
     
 
 def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucion, comentario, motivoCliente,estado):#50485788
@@ -471,134 +536,111 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
         return False, 'Error Cuenta no valida',''
 
     print('CREAR CASO NEGOCIO')
-    driver.find_element(By.XPATH, caso_negocio['crear']).click()
+    btn_creacion_Ajuste, res = cargandoElemento(driver, 'button', 'aria-label', 'Casos de Negocio Applet de lista:Nuevo')
+    if btn_creacion_Ajuste == False: return False, 'Error Crear CN', '-'
 
-    ingresarCN = False
-    contador = 0
-    while ingresarCN == False:
-        try:
+    elemento_monto_Ajuste, res = cargandoElemento(driver, 'input', 'aria-label', 'Solución')
+    if elemento_monto_Ajuste == False: return False, 'Error Crear CN', '-'
 
-            # categoria = driver.find_element(By.XPATH, caso_negocio['categoria']).click()
-            # categoria = driver.find_element(By.XPATH, caso_negocio['categoria'] + '/input')
+    #Categoria
+    textoLabelCategoriaCN = 'Categoria'
+    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
+    categoriaCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']")
+    categoriaCN.clear()
+    categoriaCN.send_keys(categoria)
+    categoriaCN.send_keys(Keys.RETURN)
+    sleep(3)
 
-            label = 'Categoria'
-            categoriaElem = driver.find_element(By.XPATH, "//input[@aria-label='" + label + "']")
-            categoriaElem.click()
-            categoriaElem.send_keys(categoria)
-            categoriaElem.send_keys(Keys.RETURN)
-            print('<<<<<<<<<<<<<<<< CATEGORIA INGRESADA >>>>>>>>>>>>>>>>>>><')
-
-            
-            contador = 0
-            ingresarCN = True
-        
-        except Exception as e:
-            print(e)
-
-            contador += 1
-            if contador == 5:
-                error = 'Error Crear Caso Negocio'
-                ingresarCN = True
-                return False, error,''
-            sleep(5)
-
-    # motivos = driver.find_element(By.XPATH, caso_negocio['motivo']).click()
-    # motivos = driver.find_element(By.XPATH, caso_negocio['motivo'] + '/input')
-    label = 'Motivo'
-    motivosElem = driver.find_element(By.XPATH, "//input[@aria-label='" + label + "']")
-    motivosElem.click()
-    motivosElem.send_keys(motivos)
-    motivosElem.send_keys(Keys.RETURN)
+    #Motivo
+    textoLabelMotivoCN = 'Motivo'
+    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']").click()
+    motivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']")
+    motivoCN.clear()
+    motivoCN.send_keys(motivos)
+    motivoCN.send_keys(Keys.RETURN)
     print('<<<<<<<<<<<<<<<< MOTIVO INGRESADA >>>>>>>>>>>>>>>>>>><')
+    sleep(3)
 
-    # subMotivo = driver.find_element(By.XPATH, caso_negocio['subMotivo']).click()
-    # subMotivo = driver.find_element(By.XPATH, caso_negocio['subMotivo'] + '/input')
-    label = 'Submotivo'
-    subMotivoElem = driver.find_element(By.XPATH, "//input[@aria-label='" + label + "']")
-    subMotivoElem.click()
-    subMotivoElem.send_keys(subMotivo)
-    subMotivoElem.send_keys(Keys.RETURN)
+    #Submotivo
+    textoLabelSubMotivoCN = 'Submotivo'
+    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
+    subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']")
+    subMotivoCN.clear()
+    subMotivoCN.send_keys(subMotivo)
+    subMotivoCN.send_keys(Keys.RETURN)
     print('<<<<<<<<<<<<<<<< SUBMOTIVO INGRESADA >>>>>>>>>>>>>>>>>>><')
+    sleep(3)
 
+    #Solucion
     try:
-
-        # solucion = driver.find_element(By.XPATH, caso_negocio['solucion']).click()
-        # solucion = driver.find_element(By.XPATH, caso_negocio['solucion'] + '/input')
-        label = 'Solución'
-        solucionElem = driver.find_element(By.XPATH, "//input[@aria-label='" + label + "']")
-        solucionElem.click()
-        solucionElem.send_keys(solucion)
-        solucionElem.send_keys(Keys.RETURN)
-        print('<<<<<<<<<<<<<<<< SOLUCION INGRESADA >>>>>>>>>>>>>>>>>>><')
-
-        try:
-
-            print('Motivo cliente: ', motivoCliente)
-            # motivoClienteinput = driver.find_element(By.XPATH, caso_negocio['motivoCliente']).click()
-            # motivoClienteinput = driver.find_element(By.XPATH, caso_negocio['motivoCliente'] + '/input')
-            label = 'Motivo Cliente'
-            motivoClienteinput = driver.find_element(By.XPATH, "//input[@aria-label='" + label + "']")
-            motivoClienteinput.click()
-            sleep(4)
-            motivoClienteinput.send_keys(motivoCliente)
-            motivoClienteinput.send_keys(Keys.RETURN)
-            print('<<<<<<<<<<<<<<<< MOTIVO CLIENTE INGRESADA >>>>>>>>>>>>>>>>>>><')
-            sleep(4)
-        except Exception as e:
-            print(e)
+        textoLabelsolucionCN = 'Solución'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']").click()
+        solucionCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']")
+        solucionCN.clear()
+        solucionCN.send_keys(solucion)
+        solucionCN.send_keys(Keys.RETURN)
     except Exception:
-        alert = Alert(driver)
-        alertText = alert.text
+        alerta = Alert(driver)
+        textoAlerta = alerta.text
         alert.accept()
         sleep(4)
 
-
-        error = 'Error Warning ' + alertText
-        print(error)
-        return False, error, '-','-'
-
-    sleep(1)
-    # comentario = driver.find_element(By.XPATH, caso_negocio['comentario']).click()
-    # comentario = driver.find_element(By.XPATH, caso_negocio['comentario'] + '/div/textarea')
-    try:
-        label = 'Comentarios'
-        comentarioElem = driver.find_element(By.XPATH, "//textarea[@aria-label='" + label + "']")
-        comentarioElem.click()
-        if comentario == '':
-            comentario = 'BOT'
-        comentarioElem.send_keys(comentario)
-        print('<<<<<<<<<<<<<<<< COMENTARIO INGRESADA >>>>>>>>>>>>>>>>>>><')
-        
-        # motivoCierre = driver.find_element(By.XPATH, caso_negocio['motivoCierre']).click()
-        # motivoCierre = driver.find_element(By.XPATH, caso_negocio['motivoCierre'] + '/input')
-        label = 'Motivo del Cierre'
-        motivoCierre = driver.find_element(By.XPATH, "//input[@aria-label='" + label + "']")
-        motivoCierre.click()
-        motivoCierre.send_keys('RAC INFORMA Y SOLUCIONA')
-        print('<<<<<<<<<<<<<<<< MOTIVO CIERRE INGRESADA >>>>>>>>>>>>>>>>>>><')
-
-        driver.find_element(By.XPATH, caso_negocio['menuEstado']).click()
-        sleep(3)
-        if estado.lower() == 'abierto':
-            driver.find_element(By.XPATH, caso_negocio['opcAbierto']).click()
-            sleep(3)
-        else:
-            driver.find_element(By.XPATH, caso_negocio['opcCerrado']).click()
-            sleep(3)
-
-        cnNuevo = driver.find_element(By.XPATH, caso_negocio['cnNuevo'])
-        cnNuevo = cnNuevo.get_attribute("value")
-
-        driver.find_element(By.XPATH, caso_negocio['guardar']).click()
+        textoLabelCancelarCN = 'Casos de negocio Applet de formulario:Cancelar'
+        driver.find_element_by_xpath("//button[@aria-label='" + textoLabelCancelarCN + "']").click()
+        return False, f'Error Warning {textoAlerta}', '-'
+    sleep(3)
+    print('<<<<<<<<<<<<<<<< SOLUCION INGRESADA >>>>>>>>>>>>>>>>>>><')
     
-    except Exception as e:
-        print(e)
-        e = str(e)
-        error = 'Error AlertText: ' + e
-        print(error)
-        return False, error, ''
-    
+    #Motivo Cliente
+    textoLabelmotivoClienteCN = 'Motivo Cliente'
+    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
+    motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
+    motivoClienteCN.clear()
+    motivoClienteCN.send_keys(motivoCliente)
+    motivoClienteCN.send_keys(Keys.RETURN)
+    print('<<<<<<<<<<<<<<<< MOTIVO CLIENTE INGRESADA >>>>>>>>>>>>>>>>>>><')
+    sleep(3)
 
+    #Comentario
+    if comentario == '': comentario = 'BOT'
+
+    textoLabelcomentarioCN = 'Comentarios'
+    driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
+    comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
+    comentarioCN.clear()
+    comentarioCN.send_keys(comentario)
+    print('<<<<<<<<<<<<<<<< COMENTARIO INGRESADA >>>>>>>>>>>>>>>>>>><')
+    sleep(3)
+
+    #Motivo del Cierre
+    textoLabelmotivoCierreCN = 'Motivo del Cierre'
+    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
+    motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
+    motivoCierreCN.clear()
+    motivoCierreCN.send_keys('RAC INFORMA Y SOLUCIONA')
+    motivoCierreCN.send_keys(Keys.RETURN)
+    print('<<<<<<<<<<<<<<<< MOTIVO CIERRE INGRESADA >>>>>>>>>>>>>>>>>>><')
+    sleep(3)
+
+    cnNuevo = driver.find_element(By.XPATH, caso_negocio['cnNuevo'])
+    cnNuevo = cnNuevo.get_attribute("value")
+
+    #Estado
+    valEstado = ''
+    if estado.lower() == 'abierto': valEstado = 'Abierto'
+    else: valEstado = 'Cerrado'
+    driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]').click()
+    sleep(10)
+    driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]/div/span').click()
+    sleep(5)
+    pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
+    posicion = obtencionColumna(driver, valEstado, pathEstadoCNOpc)
+    if posicion == False: return False, 'Error Pantalla NO Carga', '-'
+    sleep(5)
+    
+    driver.find_element(By.XPATH, "//button[@aria-label='Casos de negocio Applet de formulario:Guardar']").click()
+    print('CN Guardado')
+    sleep(7)
 
     try:
         alert = Alert(driver)

@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.alert import Alert
 
 from time import sleep
 
@@ -34,6 +35,40 @@ def ingresoInfo(driver, xpath, valor, nombreCampo = 'Campo X', enter = False):
     if enter == True: campo.send_keys(Keys.RETURN); sleep(2)
     print(f'-> {nombreCampo} OK!')
 
+def cargandoElemento(driver, elemento, atributo, valorAtributo, path = False):
+
+    cargando = True
+    contador = 0
+
+    while cargando:
+
+        sleep(3)
+        try: 
+            print('Validando posible warning')
+            contador += 1
+            alert = Alert(driver)
+            alert_txt = alert.text
+            print(f'♦ {alert_txt} ♦')
+            if 'Cuenta en cobertura FTTH,' in alert_txt: 
+                alert.accept()
+                print('aqui')
+                # return True, ''
+            else: return False, f'Inconsistencia Siebel: {alert_txt}'            
+        
+        except:
+            try:
+                print('Esperando a que el elemento cargue')
+                if path == False: 
+                    driver.find_element(By.XPATH, f"//{elemento}[@{atributo}='{valorAtributo}']").click()
+                    return True, ''
+                else: 
+                    print('aqui')
+                    driver.find_element(By.XPATH, path).click()
+                    return True, ''
+            except:
+                print('Pantalla Cargando')
+                if contador == 70: return False, ''
+    
 def busquedaElemento(driver, elemento, xpath):
 
     buscandoElemento = True
@@ -57,6 +92,38 @@ def busquedaElemento(driver, elemento, xpath):
         except: 
             if contador == 200: return False
 
+def obtencionColumna(driver, nombreColumna, path, path2 = False):
+
+    buscandoColumna = True
+    contador = 0
+
+    while buscandoColumna:
+
+        try:
+            contador += 1
+            nameColumna2 = 'False'
+            pathF = path.replace('{contador}', str(contador))
+
+            try:
+                nameColumna = driver.find_element(By.XPATH, pathF)
+                nameColumna = driver.execute_script("return arguments[0].textContent;", nameColumna)
+                print(f'path1: {nameColumna}')
+            except: nameColumna = 'False'
+
+            if path2 != False: 
+                try:
+                    pathF2 = path2.replace('{contador}', str(contador))
+                    nameColumna2 = driver.find_element(By.XPATH, pathF2)
+                    nameColumna2 = driver.execute_script("return arguments[0].textContent;", nameColumna2)
+                except: nameColumna2 = 'False'
+                print(f'path2: {nameColumna2}')
+
+            if nombreColumna in nameColumna or nombreColumna in nameColumna2: return str(contador)
+            else:
+                if contador == 100: return False
+
+        except Exception as e: print(str(e)); return False
+    
 def busquedaCuenta(driver, cuenta, tipoOrden, motivoOrden, comentarios):
 
     try:
@@ -219,31 +286,103 @@ def generacionCN(driver, tipoOrden):
 
     try:
         print('-> Generando CN')
-        resultado = cargaElementos(driver, '//button[@title="Casos de Negocio Applet de lista:Nuevo"]')
-        if resultado == False: return 1, 'Error Creacion CN', '-'
-        print('-> CN Creado')
-        cargaElementos(driver, '//input[@aria-label="Categoria"]')
-        ingresoInfo(driver, '//input[@aria-label="Categoria"]', 'OUTBOUND', 'Categoria', True)
-        ingresoInfo(driver, '//input[@aria-label="Motivo"]', 'SEGUIMIENTOS ESPECIALES', 'Motivo', True)
-        ingresoInfo(driver, '//input[@aria-label="Submotivo"]', 'CALL BACK', 'SubMotivo', True)
-        ingresoInfo(driver, '//input[@aria-label="Solución"]', 'SOLUCION EN LINEA', 'Solucion', True)
-        ingresoInfo(driver, '//textarea[@aria-label="Comentarios"]', 'Call Back Gestión sin contacto', 'Comentarios')
+        #Creacion CN
+        btn_creacion_Ajuste, res = cargandoElemento(driver, 'button', 'aria-label', 'Casos de Negocio Applet de lista:Nuevo')
+        if btn_creacion_Ajuste == False: return 1, 'Error Pantalla', '-'
 
-        if 'Cablemodem' in tipoOrden: ingresoInfo(driver, '//input[@aria-label="Motivo Cliente"]', 'INTERNET', 'Motivo Cliente', True)
-        elif 'Video' in tipoOrden: ingresoInfo(driver, '//input[@aria-label="Motivo Cliente"]', 'VIDEO', 'Motivo Cliente', True)
-        elif 'Telefonia' in tipoOrden: ingresoInfo(driver, '//input[@aria-label="Motivo Cliente"]', 'TELEFONIA', 'Motivo Cliente', True)
+        elemento_monto_Ajuste, res = cargandoElemento(driver, 'input', 'aria-label', 'Solución')
+        if elemento_monto_Ajuste == False: return 1, 'Error Pantalla', '-'
+        print('-> CN Creado')
+        sleep(5)
+
+        #Categoria
+        textoLabelCategoriaCN = 'Categoria'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
+        categoriaCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']")
+        categoriaCN.clear()
+        categoriaCN.send_keys('OUTBOUND')
+        categoriaCN.send_keys(Keys.RETURN)
+        sleep(3)
+
+        #Motivo
+        textoLabelMotivoCN = 'Motivo'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']").click()
+        motivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']")
+        motivoCN.clear()
+        motivoCN.send_keys('SEGUIMIENTOS ESPECIALES')
+        motivoCN.send_keys(Keys.RETURN)
+        sleep(3)
+
+        #Submotivo
+        textoLabelSubMotivoCN = 'Submotivo'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
+        subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']")
+        subMotivoCN.clear()
+        subMotivoCN.send_keys('CALL BACK')
+        subMotivoCN.send_keys(Keys.RETURN)
+        sleep(3)
+
+        #Solucion
+        try:
+            textoLabelsolucionCN = 'Solución'
+            driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']").click()
+            solucionCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']")
+            solucionCN.clear()
+            solucionCN.send_keys('SOLUCION EN LINEA')
+            solucionCN.send_keys(Keys.RETURN)
+        except Exception:
+            alerta = Alert(driver)
+            textoAlerta = alerta.text
+
+            if 'Ya existe un Caso de Negocio en proceso con esta tipificacion' in textoAlerta:
+                alerta.accept()
+                error = 'Error CN previo'
+                textoLabelCancelarCN = 'Casos de negocio Applet de formulario:Cancelar'
+                driver.find_element_by_xpath("//button[@aria-label='" + textoLabelCancelarCN + "']").click()
+                return 1, error,'-'
+            else: return 1, f'Error: {textoAlerta}', '-'
+
+        #Comentario
+        textoLabelcomentarioCN = 'Comentarios'
+        driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
+        comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
+        comentarioCN.clear()
+        comentarioCN.send_keys('Call Back Gestión sin contacto')
+        sleep(3)
+
+        #Motivo Cliente
+        valMotivoCliente = ''
+        if 'Cablemodem' in tipoOrden: valMotivoCliente = 'INTERNET'
+        elif 'Video' in tipoOrden: valMotivoCliente = 'VIDEO'
+        elif 'Telefonia' in tipoOrden: valMotivoCliente = 'TELEFONIA'
         else: return 1, 'Error Tipo Orden Incorrecto', '-'
+
+        textoLabelmotivoClienteCN = 'Motivo Cliente'
+        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
+        motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
+        motivoClienteCN.clear()
+        motivoClienteCN.send_keys(valMotivoCliente)
+        motivoClienteCN.send_keys(Keys.RETURN)
 
         numeroCN = driver.find_element(By.NAME, 'SRNumber')
         numeroCN = numeroCN.text
         print(numeroCN)
-
-        cargaElementos(driver, '//input[@aria-labelledby="Status_Label_13"]')
-        print('-> Cerrando CN')
-        cargaElementos(driver, '//span[@id="s_13_1_12_0_icon"]')
-        sleep(1000)
-        # busquedaElemento(driver, "Cerrado", '/html/body/div[1]/div/div[5]/div/div[8]/ul[16]/li[{contador}]/div')
-        # cargaElementos(driver, '//button[@title="Casos de negocio Applet de formulario:Guardar"]')
+        sleep(3)
+        
+        #Estado
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]').click()
+        sleep(10)
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]/div/span').click()
+        sleep(5)
+        pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
+        posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+        if posicion == False: return 1, 'Error Pantalla NO Carga', '-'
+        
+        sleep(5)
+        print('-> CN Cerrado')
+        driver.find_element(By.XPATH, "//button[@aria-label='Casos de negocio Applet de formulario:Guardar']").click()
+        print('CN Guardado')
+        sleep(7)
 
         return 1, 'Confirmado', numeroCN
 

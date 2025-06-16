@@ -863,7 +863,39 @@ def terminoPromocion(driver, tipoPortafolio):
                 os = driver.find_element(By.XPATH, "//input[@aria-label='Número']")
                 os = driver.execute_script("return arguments[0].textContent;", os)
                 return False, error, estado, os
+def obtencionColumna(driver, nombreColumna, path, path2 = False):
 
+    buscandoColumna = True
+    contador = 0
+
+    while buscandoColumna:
+
+        try:
+            contador += 1
+            nameColumna2 = 'False'
+            pathF = path.replace('{contador}', str(contador))
+
+            try:
+                nameColumna = driver.find_element(By.XPATH, pathF)
+                nameColumna = driver.execute_script("return arguments[0].textContent;", nameColumna)
+                print(f'path1: {nameColumna}')
+            except: nameColumna = 'False'
+
+            if path2 != False: 
+                try:
+                    pathF2 = path2.replace('{contador}', str(contador))
+                    nameColumna2 = driver.find_element(By.XPATH, pathF2)
+                    nameColumna2 = driver.execute_script("return arguments[0].textContent;", nameColumna2)
+                except: nameColumna2 = 'False'
+                print(f'path2: {nameColumna2}')
+
+            if nombreColumna in nameColumna or nombreColumna in nameColumna2: return str(contador)
+            else:
+                if contador == 100: return False
+
+        except Exception as e: print(str(e)); return False
+    
+    
 def cierreActividad(driver, no_cuenta):
 
     try:
@@ -932,14 +964,14 @@ def cierreActividad(driver, no_cuenta):
         # driver.find_element(By.XPATH, xpath).click()
         sleep(10)
 
-        driver.find_element(By.XPATH, casos_negocio['inputEstado']).click()
-        sleep(3)
-        driver.find_element(By.XPATH, casos_negocio['estado']).click()
-        sleep(3)
-        opc = buscandoColumna(driver, casos_negocio['opciones'], 'Cerrado')
-        xpath = casos_negocio['opciones'].replace('{contador}', opc)
-        driver.find_element(By.XPATH, xpath).click()
-        sleep(3)
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]').click()
+        sleep(10)
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]/div/span').click()
+        sleep(5)
+        pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
+        posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+        if posicion == False: return False, 'Error Pantalla NO Carga', '-'
+        sleep(5)
         driver.find_element(By.XPATH, "//button[@aria-label='Casos de negocio Applet de formulario:Guardar']").click()
         sleep(5)
 
