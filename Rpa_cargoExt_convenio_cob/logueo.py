@@ -1,5 +1,8 @@
 #----------Selenium--------------------#
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -28,21 +31,21 @@ def start_webdriver():
         - driver: instancia de google chrome
     '''
     try:
-        
-        options = webdriver.ChromeOptions()
+        options = Options()
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        options.add_argument('--disable-gpu')
-        options.add_argument('--window-size=1024,768')
+
+        service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(
-                                executable_path =r"C:\Rpa_CX_Bots_Proxmox\Rpa_cargoExt_convenio_cob\\driver_chrome\\chromedriver.exe",
+                                service=service,
                                 options=options
                                 )
+        print('aquiiiiiiiiiiiiiiiiiii')
         sleep(3)
         print('▬ Webdriver abierto correctamente')
         return driver
     except Exception as e:
         description_error('01','start_webdriver',e)
-
+    
 def login_siebel(user, password):
     '''
     Funcion que hace el logeo en SIEBEL

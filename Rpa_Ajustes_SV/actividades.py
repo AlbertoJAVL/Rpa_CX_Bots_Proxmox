@@ -232,7 +232,7 @@ def generacionCN(driver):
         driver.find_element(By.XPATH,"//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
         comentarioCN = driver.find_element(By.XPATH,"//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
         comentarioCN.clear()
-        comentarioCN.send_keys('CN INFORMATIVO APLICACON AJUSTE BOT')
+        comentarioCN.send_keys('CN INFORMATIVO APLICACION AJUSTE BOT')
         
         sleep(3)
         #Motivo del Cierre
