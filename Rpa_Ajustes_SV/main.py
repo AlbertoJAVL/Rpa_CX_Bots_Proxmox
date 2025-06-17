@@ -173,6 +173,7 @@ def workflow():
                         info['usuarioCambio'],
                         info['fechaCambio'])
                     print(response)
+                    driver.quit()
                     return False
 
                 sleep(5)
@@ -204,6 +205,7 @@ def workflow():
                         info['usuarioCambio'],
                         info['fechaCambio'])
                     print(response)
+                    driver.quit()
                     return False
                         
                 else:
@@ -235,6 +237,7 @@ def workflow():
                             info['usuarioCambio'],
                             info['fechaCambio'])
                         print(response)
+                        driver.quit()
                         return False
                     else:
                         print('Ajuste Completado')
@@ -262,9 +265,6 @@ def workflow():
                             info['usuarioCambio'],
                             info['fechaCambio'])
                         print(response)
-
-
-                    
             
             else:
                 try:
@@ -274,14 +274,18 @@ def workflow():
                     print('Regreso a HOME')
                     result = open_item_selenium_wait(driver, xpath = home['home_from_sidebar']['xpath'])
                     if result == False:
+                        driver.quit()
                         return False
                     text_box('FIN EL CICLO COMPLETO', '-')
                     os.system('cls')
                 except Exception as e:
                     logger = logging.getLogger("rpa")
                     logger.exception("Fallo en orden %s: %s", e) 
+                    driver.quit()
                     return False
-    except Exception as e: print(e);  return False
+    except Exception as e: 
+        print(e)
+        return False
 
 # ── Bucle infinito con gestión de errores ───────────────────────────────────
 def main():

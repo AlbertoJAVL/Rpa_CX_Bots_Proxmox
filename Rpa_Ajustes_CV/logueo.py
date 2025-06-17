@@ -49,6 +49,7 @@ def start_webdriver():
                                     )
         sleep(3)
         print('▬ Webdriver abierto correctamente')
+        
         return driver
     except Exception as e:
         description_error('01','start_webdriver',e)
@@ -110,20 +111,21 @@ def login_siebel(user, password):
                 texto = my_copy(driver)
                 if 'incorrecta' in texto:
                     print('CLAVES INVALIDAS')
-                    driver.close()
-                    return False
+                    driver.quit()
+                    return '', False
             except:
                 text_box(f'INICIO DE SESION EXITOSO: {user}', '▬')
         else:
             text_box('NO SE PUDO ENCONTRAR LA PESTAÑA DE SIEBEL')
-            driver.close()
-            return False
+            driver.quit()
+            return '', False
 
         #sleep(10000) #Borrar después
         return driver, True
     except Exception as e:
         description_error('02','login_siebel',e)
-        driver.close()
+        driver.quit()
+        return '', False
 
 
 

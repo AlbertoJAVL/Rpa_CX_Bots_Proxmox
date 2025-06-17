@@ -83,12 +83,14 @@ def workflow():
                     status = 'Registro pendiente'
                     response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '0', ip, '', '', '','', info['prioridad'])
                     print(response)
+                    driver.quit()
                     return False
                 else:
                     print(error)
                     status = error 
                     response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, '', '', '','', info['prioridad'])
                     print(response)
+                    driver.quit()
                     return False
 
             else:
@@ -99,6 +101,8 @@ def workflow():
                     status = error
                     response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, '', '', '',estatusAjuste, info['prioridad'])
                     print(response)
+                    driver.quit()
+                    return False
                 else:
                     resultadoCreacionCN, error, cnGenerado = generacionCN(driver, casoNegocio, ajuste)
                     print('Creacion de nuevo caso de negocio, completa')
@@ -107,15 +111,14 @@ def workflow():
                         status = 'Error al Crear CN'
                         response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, numAjuste, '', '',estatusAjuste, info['prioridad'])
                         print(response)
+                        driver.quit()
+                        return False
                     else:
                         print('Ajuste Completado')
                         status = 'Aplicación correcta'
                         response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, numAjuste, cnGenerado, 'Cerrado',estatusAjuste, info['prioridad'])
                         print(response)
 
-
-                
-           
         else:
             try:
                 # os.system('cls')
@@ -124,11 +127,13 @@ def workflow():
                 print('Regreso a HOME')
                 result = open_item_selenium_wait(driver, xpath = home['home_from_sidebar']['xpath'])
                 if result == False:
+                    driver.quit()
                     return False
                 text_box('FIN EL CICLO COMPLETO', '-')
                 os.system('cls')
                 
             except Exception:
+                driver.quit()
                 return False
                 
 

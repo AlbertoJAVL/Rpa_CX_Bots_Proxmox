@@ -108,14 +108,14 @@ def login_siebel(user, password):
                 texto = my_copy(driver)
                 if 'incorrecta' in texto:
                     print('CLAVES INVALIDAS')
-                    driver.close()
-                    return False
+                    driver.quit()
+                    return '', False
             except:
                 print('CLAVES VALIDAS')
         else:
             text_box('NO SE PUDO ENCONTRAR LA PESTAÑA DE SIEBEL')
-            driver.close()
-            return False
+            driver.quit()
+            return '', False
         try:
             open_item_selenium_wait(driver, xpath =  home['home_from_sidebar']['xpath'] )
             #sleep(10000) #Borrar después
@@ -124,7 +124,8 @@ def login_siebel(user, password):
             return driver, False
     except Exception as e:
         description_error('02','login_siebel',e)
-        driver.close()
+        driver.quit()
+        return '', False
 
 
 
