@@ -268,7 +268,7 @@ def cerrarOrdenAgain(driver,numeroOrdenApi,comentarios, motivo, estado):
         print('█Busqueda')
     except Exception as e:
         print('La ventana debe estar abierta')
-        driver.close()
+        driver.quit()
         exit()
     #Insertar 
     #Se posiciona para escirbir en el campo de numero de orden

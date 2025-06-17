@@ -13,7 +13,6 @@ import Services.ApiCyberHubOrdenes as api
 # ----------SYSTEM -------------------
 from time import sleep
 import win32clipboard as cp
-import socket, logging
 
 #-----------OTRAS--------------------
 from json.decoder import JSONDecodeError
@@ -30,27 +29,18 @@ def start_webdriver():
     '''
     try:
         
-        opts = webdriver.ChromeOptions()
-        opts.add_experimental_option('excludeSwitches', ['enable-logging'])
-        opts.add_argument('--window-size=1024,768')
-        opts.add_argument("--disable-gpu")
-        opts.add_argument("--no-sandbox")
-        opts.add_argument("--blink-settings=imagesEnabled=false")
-        
-        host = socket.gethostname()
-        ip = socket.gethostbyname(host)
-        print(ip)
-        print(type(ip))
-
-        driver = webdriver.Chrome(options=opts)
-        
-                                    
+        options = webdriver.ChromeOptions()
+        options.add_experimental_option('excludeSwitches', ['enable-logging'])
+        options.add_argument('--disable-gpu')
+        options.add_argument('--window-size=1024,768')
+        driver = webdriver.Chrome(
+                                executable_path =r"C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_CV\driver_chrome\\chromedriver.exe",
+                                options=options
+                                )
         sleep(3)
         print('▬ Webdriver abierto correctamente')
         return driver
     except Exception as e:
-        logger = logging.getLogger("rpa")
-        logger.exception("Fallo en orden %s: %s", e) 
         description_error('01','start_webdriver',e)
 
 def login_siebel(user, password):
@@ -111,7 +101,6 @@ def login_siebel(user, password):
                 if 'incorrecta' in texto:
                     print('CLAVES INVALIDAS')
                     driver.quit()
-
                     return '', False
             except:
                 text_box(f'INICIO DE SESION EXITOSO: {user}', '▬')
@@ -123,8 +112,6 @@ def login_siebel(user, password):
         #sleep(10000) #Borrar después
         return driver, True
     except Exception as e:
-        logger = logging.getLogger("rpa")
-        logger.exception("Fallo en orden %s: %s", e) 
         description_error('02','login_siebel',e)
         driver.quit()
         return '', False

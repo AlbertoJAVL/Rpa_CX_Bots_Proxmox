@@ -16,7 +16,6 @@ import win32clipboard as cp
 
 #-----------OTRAS--------------------
 from json.decoder import JSONDecodeError
-import socket
 
 ERROR = "HA OCURRIDO UN ERROR EN LA FUNCION "
 # SIEBEL = 'https://crmqa.izzi.mx/siebel/app/eCommunications/esn'
@@ -36,17 +35,10 @@ def start_webdriver():
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
         options.add_argument('--disable-gpu')
         options.add_argument('--window-size=1024,768')
-        host = socket.gethostname()
-        ip = socket.gethostbyname(host)
-        print(ip)
-        print(type(ip))
-
-        if '192.168.61.' in ip: driver = webdriver.Chrome(options=options)
-        else:
-            driver = webdriver.Chrome(
-                                    executable_path =r"C:\\Rpa_CX_Bots_Proxmox\\chromedriver.exe",
-                                    options=options
-                                    )
+        driver = webdriver.Chrome(
+                                executable_path =r"C:\\Rpa_CX_Bots_Proxmox\\Rpa_Call_Trouble\\driver_chrome\\chromedriver.exe",
+                                options=options
+                                )
         sleep(3)
         print('▬ Webdriver abierto correctamente')
         return driver
@@ -184,17 +176,17 @@ def loginVISA(user, password):
                 texto = my_copy(driver)
                 if 'incorrecta' in texto:
                     print('CLAVES INVALIDAS')
-                    driver.close()
+                    driver.quit()
                     return False
             except:
                 print(f'INICIO DE SESION EXITOSO: {user}', '▬')
         else:
             print('NO SE PUDO ENCONTRAR LA PESTAÑA DE SIEBEL')
-            driver.close()
+            driver.quit()
             return False
 
         #sleep(10000) #Borrar después
         return driver, True
     except Exception as e:
         print('Error Login Siebel')
-        driver.close()
+        driver.quit()
