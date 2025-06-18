@@ -252,6 +252,7 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
         pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
         posicion = obtencionColumna(driver, estado, pathEstadoCNOpc)
         if posicion == False: return False
+        driver.find_element(By.XPATH, pathEstadoCNOpc.replace('{contador}', posicion)).click()
         
         sleep(5)
         print('OK: ESTADO')

@@ -107,12 +107,14 @@ def __main__():
                                     status = errorOrden                            
                                     response = api.notDone_cerrado(info['id'], info['ciudad'], info['comentarios'], info['creadoPor'], info['cuenta'], info['direccion'], info['estadoOrden'], info['fechaApertura'], info['fechaSolicitada'], info['hub'], info['motivoCancelacion'], info['motivoOrden'], info['motivoReprogramacion'], info['nombreCliente'], info['numeroOrden'], info['numRepro'], info['paquete'], info['perfilPago'], info['plaza'], info['referido'], info['rpt'], info['situacionAnticipo'], info['subtipoCliente'], info['subtipoOrden'], info['tecnico'], info['telefono'], info['tipCliente'], info['tipoOrden'], info['ultimaModificacionPor'], info['vendedor'], info['cve_usuario'], info['fechaCompletado'], info['fechaCaptura'], status, '0', ip, '-', '-',info['resultadoLlamada'],tipoCN)
                                     print(response)
+                                    driver.close()
                                     driver.quit()
                                     return False
                                 else:
                                     status = errorOrden                            
                                     response = api.notDone_cerrado(info['id'], info['ciudad'], info['comentarios'], info['creadoPor'], info['cuenta'], info['direccion'], info['estadoOrden'], info['fechaApertura'], info['fechaSolicitada'], info['hub'], info['motivoCancelacion'], info['motivoOrden'], info['motivoReprogramacion'], info['nombreCliente'], info['numeroOrden'], info['numRepro'], info['paquete'], info['perfilPago'], info['plaza'], info['referido'], info['rpt'], info['situacionAnticipo'], info['subtipoCliente'], info['subtipoOrden'], info['tecnico'], info['telefono'], info['tipCliente'], info['tipoOrden'], info['ultimaModificacionPor'], info['vendedor'], info['cve_usuario'], info['fechaCompletado'], info['fechaCaptura'], status, '0', ip, '-', '-',info['resultadoLlamada'],tipoCN)
                                     print(response)
+                                    driver.close()
                                     driver.quit()
                                     return False
 
@@ -124,6 +126,7 @@ def __main__():
                                     status = 'Pendiente'                            
                                     response = api.notDone_cerrado(info['id'], info['ciudad'], info['comentarios'], info['creadoPor'], info['cuenta'], info['direccion'], info['estadoOrden'], info['fechaApertura'], info['fechaSolicitada'], info['hub'], info['motivoCancelacion'], info['motivoOrden'], info['motivoReprogramacion'], info['nombreCliente'], info['numeroOrden'], info['numRepro'], info['paquete'], info['perfilPago'], info['plaza'], info['referido'], info['rpt'], info['situacionAnticipo'], info['subtipoCliente'], info['subtipoOrden'], info['tecnico'], info['telefono'], info['tipCliente'], info['tipoOrden'], info['ultimaModificacionPor'], info['vendedor'], info['cve_usuario'], info['fechaCompletado'], info['fechaCaptura'], status, '0', ip, '-', '-',info['resultadoLlamada'],tipoCN)
                                     print(response)
+                                    driver.close()
                                     driver.quit()
                                     return False
 
@@ -132,6 +135,7 @@ def __main__():
                                     status = error                            
                                     response = api.notDone_cerrado(info['id'], info['ciudad'], info['comentarios'], info['creadoPor'], info['cuenta'], info['direccion'], info['estadoOrden'], info['fechaApertura'], info['fechaSolicitada'], info['hub'], info['motivoCancelacion'], info['motivoOrden'], info['motivoReprogramacion'], info['nombreCliente'], info['numeroOrden'], info['numRepro'], info['paquete'], info['perfilPago'], info['plaza'], info['referido'], info['rpt'], info['situacionAnticipo'], info['subtipoCliente'], info['subtipoOrden'], info['tecnico'], info['telefono'], info['tipCliente'], info['tipoOrden'], info['ultimaModificacionPor'], info['vendedor'], info['cve_usuario'], info['fechaCompletado'], info['fechaCaptura'], status, '1', ip, '-', '-',info['resultadoLlamada'],tipoCN)
                                     print(response)
+                                    driver.close()
                                     driver.quit()
                                     return False
                                 else:
@@ -152,12 +156,14 @@ def __main__():
                             print('Regreso a HOME')
                             result = open_item_selenium_wait(driver, xpath =  home['home_from_sidebar']['xpath'] )
                             if result == False:
+                                driver.close()
                                 driver.quit()
                                 return False
                             text_box('FIN DEL CICLO COMPLETO', '▬')
                             os.system('cls')
                         
                         except Exception:
+                            driver.close()
                             driver.quit()
                             return False
     else:

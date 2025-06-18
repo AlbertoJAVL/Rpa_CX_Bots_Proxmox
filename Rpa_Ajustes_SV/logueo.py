@@ -110,6 +110,7 @@ def login_siebel(user, password):
                 texto = my_copy(driver)
                 if 'incorrecta' in texto:
                     print('CLAVES INVALIDAS')
+                    driver.close()
                     driver.quit()
 
                     return '', False
@@ -117,6 +118,7 @@ def login_siebel(user, password):
                 text_box(f'INICIO DE SESION EXITOSO: {user}', '▬')
         else:
             text_box('NO SE PUDO ENCONTRAR LA PESTAÑA DE SIEBEL')
+            driver.close()
             driver.quit()
             return '', False
 
@@ -126,6 +128,7 @@ def login_siebel(user, password):
         logger = logging.getLogger("rpa")
         logger.exception("Fallo en orden %s: %s", e) 
         description_error('02','login_siebel',e)
+        driver.close()
         driver.quit()
         return '', False
 

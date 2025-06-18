@@ -635,6 +635,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
         pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
         posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
         if posicion == False: return False, 'Error Pantalla NO Carga', '-', '-'
+        driver.find_element(By.XPATH, pathEstadoCNOpc.replace('{contador}', posicion)).click()
         sleep(5)
         
         driver.find_element(By.XPATH, "//button[@aria-label='Casos de negocio Applet de formulario:Guardar']").click()

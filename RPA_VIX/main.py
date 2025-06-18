@@ -86,6 +86,7 @@ def workflow(user = USER, password = PASS):
                         status = 'Pendiente' 
                         response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '0', ip, '', '', '', '')
                         print(response)
+                        driver.close()
                         driver.quit()
                         return False
 
@@ -96,6 +97,7 @@ def workflow(user = USER, password = PASS):
                         response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, '', '', '', '')
                         print(response)
                         cierreActividad(driver, False)
+                        driver.close()
                         driver.quit()
                         return False
 
@@ -106,6 +108,7 @@ def workflow(user = USER, password = PASS):
                             status = error
                             response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, osGenerada, '', '', estatusOS)
                             print(response)
+                            driver.close()
                             driver.quit()
                             return False
                         else:
@@ -116,6 +119,7 @@ def workflow(user = USER, password = PASS):
                                 status = 'Error Crear CN'
                                 response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, osGenerada, cnGenerado, 'Open', estatusOS)
                                 print(response)
+                                driver.close()
                                 driver.quit()
                                 return False
                             else:
@@ -129,6 +133,7 @@ def workflow(user = USER, password = PASS):
                     status = 'Pendiente' 
                     response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '0', ip, '', '', '', '')
                     print(response)
+                    driver.close()
                     driver.quit()
                     return False
                 else:
@@ -136,6 +141,7 @@ def workflow(user = USER, password = PASS):
                     status = error 
                     response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, '', '', '', '')
                     print(response)
+                    driver.close()
                     driver.quit()
                     return False
                     # cierreActividad(driver, False)
@@ -146,6 +152,7 @@ def workflow(user = USER, password = PASS):
                     status = error           
                     response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, osGenerada, '', '', estatusOS)
                     print(response)
+                    driver.close()
                     driver.quit()
                     return False
                 else:
@@ -156,6 +163,7 @@ def workflow(user = USER, password = PASS):
                         status = 'Error Crear CN'
                         response = api.ajusteCerrado(info['id'],info['casoNegocio'],info['categoria'],info['cuenta'],info['estado'],info['fechaApertura'],info['mediosContacto'],info['motivoCliente'],info['motivos'],info['solucion'],info['submotivo'],info['cve_usuario'],info['fechaCompletado'],info['fechaCaptura'],status, '1', ip, osGenerada, cnGenerado, 'Open', estatusOS)
                         print(response)
+                        driver.close()
                         driver.quit()
                         return False
                         
@@ -179,6 +187,7 @@ def workflow(user = USER, password = PASS):
                 os.system('cls')
                 
             except Exception:
+                driver.close()
                 driver.quit()
                 return False
                 

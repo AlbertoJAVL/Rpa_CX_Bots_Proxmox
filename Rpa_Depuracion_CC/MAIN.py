@@ -97,6 +97,7 @@ def __main__():
                         status = 'Orden no valida'
                         response = api.cuenta_erronea(info[0]['id'],info[0]['lead_id'],info[0]['comentarios'],info[0]['compania'],info[0]['estado'],info[0]['hub'],info[0]['motivoOrden'],info[0]['nodo'],info[0]['cuenta'],info[0]['numOrden'],info[0]['tipo'],info[0]['cn_generado'],info[0]['fechaHoraCierre'],info[0]['fechaCompletado'],info[0]['fechaCarga'],info[0]['fechaCreado'],info[0]['cve_usuario'],status,info[0]['procesando'],ip,info[0]['source'])
                         print('Respuesta de API (Cancelada por IZZI)')
+                        driver.close()
                         driver.quit()
                         return False
                     
@@ -106,6 +107,7 @@ def __main__():
                         response = api.orden_cerrada(info[0]['id'],info[0]['lead_id'],info[0]['comentarios'],info[0]['compania'],info[0]['estado'],info[0]['hub'],info[0]['motivoOrden'],info[0]['nodo'],info[0]['cuenta'],info[0]['numOrden'],info[0]['tipo'],info[0]['cn_generado'],info[0]['fechaHoraCierre'],info[0]['fechaCompletado'],info[0]['fechaCarga'],info[0]['fechaCreado'],info[0]['cve_usuario'],status,info[0]['procesando'],ip,info[0]['source'])
                         print('Respuesta de API (Cancelada por IZZI)')
                         text_box(FINALIZADO_ERROR,'♦')
+                        driver.close()
                         driver.quit()
                         return False
 
@@ -129,6 +131,7 @@ def __main__():
                             status = 'Error al cancelar Orden'
                             response = api.orden_cerrada(info[0]['id'],info[0]['lead_id'],info[0]['comentarios'],info[0]['compania'],info[0]['estado'],info[0]['hub'],info[0]['motivoOrden'],info[0]['nodo'],info[0]['cuenta'],info[0]['numOrden'],info[0]['tipo'],info[0]['cn_generado'],info[0]['fechaHoraCierre'],info[0]['fechaCompletado'],info[0]['fechaCarga'],info[0]['fechaCreado'],info[0]['cve_usuario'],status,info[0]['procesando'],ip,info[0]['source'])
                             print('Respuesta de API (Cancelada por IZZI: )',response)
+                            driver.close()
                             driver.quit()
                             return False
                         status = 'Orden Cancelado por RPA'
@@ -142,6 +145,7 @@ def __main__():
                             status_pantalla_unica  = pantalla_unica_consulta(driver, cuenta_api)
                             if status_pantalla_unica != True:
                                 text_box(FINALIZADO_ERROR,'♦')
+                                driver.close()
                                 driver.quit()
                                 return False
 
@@ -168,6 +172,7 @@ def __main__():
                             elif status_nuevo_caso == False:
                                 text_box('Fallo la creacion del caso de negocio')
                                 text_box(FINALIZADO_ERROR,'♦')
+                                driver.close()
                                 driver.quit()
                                 return False
                             else:
