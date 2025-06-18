@@ -103,6 +103,7 @@ def __main__():
                                 response = api.notDone_cerrado('-', info['id'], info['cuenta'], info['categoria'], info['motivos'], info['submotivos'], info['solucion'], info['motivoCliente'],info['comentarios'],info['estado'],info['cve_usuario'], info['fechaCompletado'], info['fechaCaptura'], status, '1', ip)
                                 print(response)
                                 if 'Warning' in error:
+                                    driver.close()
                                     driver.quit()
                                     return False
                             else:
@@ -123,6 +124,7 @@ def __main__():
                             os.system('cls')
                         
                         except Exception:
+                            driver.close()
                             driver.quit()
                             return False
     else:

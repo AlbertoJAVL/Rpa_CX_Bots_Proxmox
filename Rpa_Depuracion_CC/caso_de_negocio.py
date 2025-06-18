@@ -258,6 +258,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
         posicion = obtencionColumna(driver, estado, pathEstadoCNOpc)
         if posicion == False: return False
         
+        driver.find_element(By.XPATH, pathEstadoCNOpc.replace('{contador}', posicion)).click()
+        
         sleep(5)
         print('OK: ESTADO')
         print('Caso terminado')

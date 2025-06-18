@@ -92,6 +92,8 @@ def workflow():
                                                 info['motivo'], 
                                                 info['comentarios'], 
                                                 '-')
+                                                
+                driver.close()
                 driver.quit()
                 return False
 
@@ -116,7 +118,7 @@ def workflow():
                                                 info['comentarios'], 
                                                 numeroCN)
                 
-                if 'Error' in resultado: driver.quit(); return False
+                if 'Error' in resultado: driver.close(); driver.quit(); return False
                 
         
         else:
@@ -130,6 +132,7 @@ def workflow():
                 os.system('cls')
                 
             except Exception:
+                driver.close()
                 driver.quit()
                 return False
                 

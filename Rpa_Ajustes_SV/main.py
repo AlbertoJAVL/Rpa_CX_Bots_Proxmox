@@ -173,6 +173,7 @@ def workflow():
                         info['usuarioCambio'],
                         info['fechaCambio'])
                     print(response)
+                    driver.close()
                     driver.quit()
                     return False
 
@@ -205,6 +206,7 @@ def workflow():
                         info['usuarioCambio'],
                         info['fechaCambio'])
                     print(response)
+                    driver.close()
                     driver.quit()
                     return False
                         
@@ -237,6 +239,7 @@ def workflow():
                             info['usuarioCambio'],
                             info['fechaCambio'])
                         print(response)
+                        driver.close()
                         driver.quit()
                         return False
                     else:
@@ -274,6 +277,7 @@ def workflow():
                     print('Regreso a HOME')
                     result = open_item_selenium_wait(driver, xpath = home['home_from_sidebar']['xpath'])
                     if result == False:
+                        driver.close()
                         driver.quit()
                         return False
                     text_box('FIN EL CICLO COMPLETO', '-')
@@ -281,6 +285,7 @@ def workflow():
                 except Exception as e:
                     logger = logging.getLogger("rpa")
                     logger.exception("Fallo en orden %s: %s", e) 
+                    driver.close()
                     driver.quit()
                     return False
     except Exception as e: 

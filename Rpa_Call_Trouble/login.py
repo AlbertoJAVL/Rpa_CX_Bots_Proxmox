@@ -106,12 +106,14 @@ def login_siebel(user, password):
                 texto = my_copy(driver)
                 if 'incorrecta' in texto:
                     print('CLAVES INVALIDAS')
+                    driver.close()
                     driver.quit()
                     return '', False
             except:
                 print(f'INICIO DE SESION EXITOSO: {user}', '▬')
         else:
             print('NO SE PUDO ENCONTRAR LA PESTAÑA DE SIEBEL')
+            driver.close()
             driver.quit()
             return '', False
 
@@ -119,6 +121,7 @@ def login_siebel(user, password):
         return driver, True
     except Exception as e:
         print('Error Login Siebel')
+        driver.close()
         driver.quit()
         return '', False
 
