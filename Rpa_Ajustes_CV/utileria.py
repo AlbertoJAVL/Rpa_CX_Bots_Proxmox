@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.alert import Alert
 
 # ----------SYSTEM -------------------
 from time import sleep
@@ -183,6 +184,40 @@ def my_send_keys(driver, key, repeticiones = 1):
     for i in range(repeticiones):
         act.send_keys(exec(key))
 
+def cargandoElemento(driver, elemento, atributo, valorAtributo, path = False):
+
+    cargando = True
+    contador = 0
+
+    while cargando:
+
+        sleep(3)
+        try: 
+            print('Validando posible warning')
+            contador += 1
+            alert = Alert(driver)
+            alert_txt = alert.text
+            print(f'♦ {alert_txt} ♦')
+            if 'FTTH' in alert_txt: 
+                alert.accept()
+                print('aqui')
+                # return True, ''
+            else: return False, f'Inconsistencia Siebel: {alert_txt}'            
+        
+        except:
+            try:
+                print('Esperando a que el elemento cargue')
+                if path == False: 
+                    driver.find_element(By.XPATH, f"//{elemento}[@{atributo}='{valorAtributo}']").click()
+                    return True, ''
+                else: 
+                    print('aqui')
+                    driver.find_element(By.XPATH, path).click()
+                    return True, ''
+            except:
+                print('Pantalla Cargando')
+                if contador == 70: return False, ''
+    
 #---------------------- SIEBEL ----------------------
 def pantalla_unica_consulta(driver, cuenta):
     '''
@@ -197,49 +232,42 @@ def pantalla_unica_consulta(driver, cuenta):
     '''
     
     try:
-        wait = WebDriverWait(driver, 60)
         text_box('Pantalla Unica de Consulta', '.')
 
-        #Entra a la ventana de Pantalla Unica de Consulta
-        result = open_item_selenium_wait(driver, xpath = home['pantalla_unica']['xpath'] )
-        if result == False:
-           return False,''
+        # Entra a pantalla unica
+        lupa_busqueda_cn, res = cargandoElemento(driver, 'a', 'title', 'Pantalla Única de Consulta')
+        if lupa_busqueda_cn == False:
+            if 'Inconsistencia' in res: return False
+            else:  return False
 
+        # Elemento de busqueda de cuenta
+        lupa_busqueda_cn, res = cargandoElemento(driver, 'button', 'aria-label', 'Pantalla Única de Consulta Applet de formulario:Consulta')
+        if lupa_busqueda_cn == False: 
+            if 'Inconsistencia' in res: return False
+            else: return False
+        
+        # Input de ingreso de cuenta
+        lupa_busqueda_cn, res = cargandoElemento(driver, 'input', 'aria-label', 'Numero Cuenta')
+        if lupa_busqueda_cn == False: 
+            if 'Inconsistencia' in res: return False
+            else: return False
+        
+        # Ingreso de cuenta
+        inputNCta = driver.find_element(By.XPATH, "//input[@aria-label='Numero Cuenta']")
+        inputNCta.send_keys(cuenta)
+        inputNCta.send_keys(Keys.RETURN)
 
-        #Espera a que la página tenga el titulo de Home 
-        element = wait.until(EC.title_contains('Resumen'))
-        print('Entró a la Pantalla Unica')
-        print('wait: ', element)
-
-        sleep(10)
-
-        #LUPA DE BUSQUEDA
-        try:
-            driver.find_element(By.XPATH, "//button[@aria-label='Pantalla Única de Consulta Applet de formulario:Consulta']").click()
-        except:
-            status_open = open_item_selenium_wait(driver, id = pantalla_unica['lupa']['id'] ,name = pantalla_unica['lupa']['name'], xpath =  pantalla_unica['lupa']['xpath'])
-            print(f"Va a buscar la cuenta: {cuenta}")
-            if status_open == False:
-                description_error('07','pantalla_unica_consulta','No se encontró la lupa de búsqueda')
-                return False,''
-
-        sleep(10)
-        #Se posiciona para escirbir en el campo de numero de orden
-        element = driver.find_element(By.XPATH, pantalla_unica['ingresar_cuenta']['xpath'])
-        element.clear()                    #Limpia lo que haya en el campo
-        element.send_keys(cuenta)          #Introduce el numero de orden
-        element.send_keys(Keys.RETURN)     #Enter
-
-        #Resvisa si tiene saldo pendiente, esta validacion es apra saber cuadno termina de cargar la cuenta
-
-        open_item_selenium_wait(driver ,xpath =  '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[1]/div/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[7]/td[7]/div')
-        driver.find_element(By.XPATH, pantalla_unica['saldo_pendiente']['xpath'])
+        # Validacion de pantalla cargada
+        cargaPantalla, res = cargandoElemento(driver, '', '', '', path= "//*[contains(@aria-label,'Perfil de Pago')]")
+        if cargaPantalla == False: 
+            if 'Inconsistencia' in res: return False
+            else: return False
 
         print('Se ingresó el numero de cuenta correctamente')
 
-        return True, ''
+        return True
         
     except Exception as e:
         print(f'No se pudo entrar a Pnatlla Unica de Consulta')
         description_error('08','pantalla_unica_consulta.',e)
-        return True, ''
+        return False

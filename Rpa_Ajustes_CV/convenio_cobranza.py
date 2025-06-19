@@ -238,7 +238,7 @@ def validacion_cuenta_convenio_cobranza(driver, no_cuenta, no_caso, meses):
         wait = WebDriverWait(driver, 120)
         act = webdriver.ActionChains(driver)
         text_box('AJSUTE POR CONVENIO COBRANZA', '▬')
-        status_pantalla_unica,error = pantalla_unica_consulta(driver, no_cuenta) 
+        status_pantalla_unica = pantalla_unica_consulta(driver, no_cuenta) 
         if status_pantalla_unica == False:
             text_box('Cuenta no valida', '▬')
             return False ,'Error Pantalla Unica','',''
