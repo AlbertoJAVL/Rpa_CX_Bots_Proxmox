@@ -114,8 +114,8 @@ def generacionCN(driver, cn, ajuste):
 
         #Categoria
         textoLabelCategoriaCN = 'Categoria'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
-        categoriaCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
+        categoriaCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelCategoriaCN + "']")
         categoriaCN.clear()
         categoriaCN.send_keys('SERVICIOS')
         categoriaCN.send_keys(Keys.RETURN)
@@ -124,8 +124,8 @@ def generacionCN(driver, cn, ajuste):
 
         #Motivo
         textoLabelMotivoCN = 'Motivo'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']").click()
-        motivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMotivoCN + "']").click()
+        motivoCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMotivoCN + "']")
         motivoCN.clear()
         motivoCN.send_keys('ACLARACION DE ESTADO DE CUENTA')
         motivoCN.send_keys(Keys.RETURN)
@@ -134,8 +134,8 @@ def generacionCN(driver, cn, ajuste):
 
         #Submotivo
         textoLabelSubMotivoCN = 'Submotivo'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
-        subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
+        subMotivoCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelSubMotivoCN + "']")
         subMotivoCN.clear()
         subMotivoCN.send_keys('AJUSTE FACTURACION')
         subMotivoCN.send_keys(Keys.RETURN)
@@ -145,8 +145,8 @@ def generacionCN(driver, cn, ajuste):
         #Solucion
         try:
             textoLabelsolucionCN = 'Solución'
-            driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']").click()
-            solucionCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']")
+            driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelsolucionCN + "']").click()
+            solucionCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelsolucionCN + "']")
             solucionCN.clear()
             solucionCN.send_keys('APLICA AJUSTE')
             solucionCN.send_keys(Keys.RETURN)
@@ -159,7 +159,7 @@ def generacionCN(driver, cn, ajuste):
                     alerta.accept()
                     error = 'No aplica caso de negocio ya tipificado'
                     textoLabelCancelarCN = 'Casos de negocio Applet de formulario:Cancelar'
-                    driver.find_element_by_xpath("//button[@aria-label='" + textoLabelCancelarCN + "']").click()
+                    driver.find_element(By.XPATH, "//button[@aria-label='" + textoLabelCancelarCN + "']").click()
                     return False, 'Error CN Previo','-'
                 else: return False, f'Error Warning: {textoAlerta}', '-'
             except: pass
@@ -173,8 +173,8 @@ def generacionCN(driver, cn, ajuste):
         cnSeguimiento = cn
         comentario  = 'Fecha: {}\nHora: {}\nMotvio: Seguimiento a convenio de cobranza\nCantidad Ajustada: {}\nCN de Seguimiento: {}\n GNERADO POR BOT'.format(fechaActual,horaActual,ajuste, cnSeguimiento)
         textoLabelcomentarioCN = 'Comentarios'
-        driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
-        comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
+        driver.find_element(By.XPATH, "//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
+        comentarioCN = driver.find_element(By.XPATH, "//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
         comentarioCN.clear()
         comentarioCN.send_keys(comentario)
 
@@ -186,8 +186,8 @@ def generacionCN(driver, cn, ajuste):
 
         #Motivo del Cliente
         textoLabelmotivoCierreCN = 'Motivo del Cierre'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
-        motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
+        motivoCierreCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
         motivoCierreCN.clear()
         motivoCierreCN.send_keys('RAC INFORMA Y SOLUCIONA')
         motivoCierreCN.send_keys(Keys.RETURN)
@@ -195,8 +195,8 @@ def generacionCN(driver, cn, ajuste):
         
         sleep(3)
         textoLabelmotivoClienteCN = 'Motivo Cliente'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
-        motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
+        motivoClienteCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
         motivoClienteCN.clear()
         motivoClienteCN.send_keys('CONVENIO COBRANZA')
         motivoClienteCN.send_keys(Keys.RETURN)
@@ -252,7 +252,7 @@ def validacionCN(driver, noCN):
         print('BUSCANDO CN')
         # driver.find_element(By.XPATH, casos_negocio['busqueda']).click()
         texto_boton ='Casos de negocio Applet de lista:Consulta'
-        driver.find_element_by_xpath("//button[@aria-label='" + texto_boton + "']").click()
+        driver.find_element(By.XPATH, "//button[@aria-label='" + texto_boton + "']").click()
             
 
 
@@ -260,7 +260,7 @@ def validacionCN(driver, noCN):
         sleep(2)
         try:
             texto_boton ='s_2_l_SR_Number s_2_l_altLink'
-            inputCN = driver.find_element_by_xpath("//input[@aria-labelledby='" + texto_boton + "']")
+            inputCN = driver.find_element(By.XPATH, "//input[@aria-labelledby='" + texto_boton + "']")
         except Exception as e:
             print(e)
             error='Error Busqueda CN'

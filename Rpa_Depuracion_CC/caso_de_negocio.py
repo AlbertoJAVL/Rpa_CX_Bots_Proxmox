@@ -172,8 +172,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
 
         #Medio de Contacto
         textoLabelMedioContactoCN = 'Medio de contacto'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMedioContactoCN + "']").click()
-        medioContactoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMedioContactoCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMedioContactoCN + "']").click()
+        medioContactoCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMedioContactoCN + "']")
         medioContactoCN.clear()
         medioContactoCN.send_keys(medio_contacto)
         medioContactoCN.send_keys(Keys.RETURN)
@@ -182,8 +182,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
 
         #Categoría
         textoLabelCategoriaCN = 'Categoria'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
-        categoriaCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
+        categoriaCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelCategoriaCN + "']")
         categoriaCN.clear()
         categoriaCN.send_keys(categoria)
         categoriaCN.send_keys(Keys.RETURN)
@@ -192,8 +192,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
 
         #Motivo
         textoLabelMotivoCN = 'Motivo'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']").click()
-        motivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMotivoCN + "']").click()
+        motivoCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMotivoCN + "']")
         motivoCN.clear()
         motivoCN.send_keys(motivo)
         motivoCN.send_keys(Keys.RETURN)
@@ -202,8 +202,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
 
         #Submotivo
         textoLabelSubMotivoCN = 'Submotivo'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
-        subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
+        subMotivoCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelSubMotivoCN + "']")
         subMotivoCN.clear()
         subMotivoCN.send_keys(sub_motivo)
         subMotivoCN.send_keys(Keys.RETURN)
@@ -213,8 +213,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
         #Solucion
         try:
             textoLabelsolucionCN = 'Solución'
-            driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']").click()
-            solucionCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']")
+            driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelsolucionCN + "']").click()
+            solucionCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelsolucionCN + "']")
             solucionCN.clear()
             solucionCN.send_keys(solucion)
             solucionCN.send_keys(Keys.RETURN)
@@ -230,8 +230,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
 
         #Motivo de Cierre
         textoLabelmotivoCierreCN = 'Motivo del Cierre'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
-        motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
+        motivoCierreCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
         motivoCierreCN.clear()
         motivoCierreCN.send_keys(motivo_cierre)
         motivoCierreCN.send_keys(Keys.RETURN)
@@ -240,8 +240,8 @@ def nuevo_caso_negocio(driver, medio_contacto, categoria, motivo, sub_motivo, so
 
         #Comentarios
         textoLabelcomentarioCN = 'Comentarios'
-        driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
-        comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
+        driver.find_element(By.XPATH, "//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
+        comentarioCN = driver.find_element(By.XPATH, "//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
         comentarioCN.clear()
         comentarioCN.send_keys(comentarios)
         print('OK: COMENTARIOS')

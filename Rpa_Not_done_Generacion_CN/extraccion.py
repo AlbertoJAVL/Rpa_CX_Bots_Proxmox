@@ -544,8 +544,8 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
 
     #Categoria
     textoLabelCategoriaCN = 'Categoria'
-    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
-    categoriaCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelCategoriaCN + "']")
+    driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelCategoriaCN + "']").click()
+    categoriaCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelCategoriaCN + "']")
     categoriaCN.clear()
     categoriaCN.send_keys(categoria)
     categoriaCN.send_keys(Keys.RETURN)
@@ -553,8 +553,8 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
 
     #Motivo
     textoLabelMotivoCN = 'Motivo'
-    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']").click()
-    motivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelMotivoCN + "']")
+    driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMotivoCN + "']").click()
+    motivoCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelMotivoCN + "']")
     motivoCN.clear()
     motivoCN.send_keys(motivos)
     motivoCN.send_keys(Keys.RETURN)
@@ -563,8 +563,8 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
 
     #Submotivo
     textoLabelSubMotivoCN = 'Submotivo'
-    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
-    subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelSubMotivoCN + "']")
+    driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelSubMotivoCN + "']").click()
+    subMotivoCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelSubMotivoCN + "']")
     subMotivoCN.clear()
     subMotivoCN.send_keys(subMotivo)
     subMotivoCN.send_keys(Keys.RETURN)
@@ -574,8 +574,8 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
     #Solucion
     try:
         textoLabelsolucionCN = 'Solución'
-        driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']").click()
-        solucionCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelsolucionCN + "']")
+        driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelsolucionCN + "']").click()
+        solucionCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelsolucionCN + "']")
         solucionCN.clear()
         solucionCN.send_keys(solucion)
         solucionCN.send_keys(Keys.RETURN)
@@ -586,15 +586,15 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
         sleep(4)
 
         textoLabelCancelarCN = 'Casos de negocio Applet de formulario:Cancelar'
-        driver.find_element_by_xpath("//button[@aria-label='" + textoLabelCancelarCN + "']").click()
+        driver.find_element(By.XPATH, "//button[@aria-label='" + textoLabelCancelarCN + "']").click()
         return False, f'Error Warning {textoAlerta}', '-'
     sleep(3)
     print('<<<<<<<<<<<<<<<< SOLUCION INGRESADA >>>>>>>>>>>>>>>>>>><')
     
     #Motivo Cliente
     textoLabelmotivoClienteCN = 'Motivo Cliente'
-    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
-    motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
+    driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoClienteCN + "']").click()
+    motivoClienteCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoClienteCN + "']")
     motivoClienteCN.clear()
     motivoClienteCN.send_keys(motivoCliente)
     motivoClienteCN.send_keys(Keys.RETURN)
@@ -605,8 +605,8 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
     if comentario == '': comentario = 'BOT'
 
     textoLabelcomentarioCN = 'Comentarios'
-    driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
-    comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
+    driver.find_element(By.XPATH, "//textarea[@aria-label='" + textoLabelcomentarioCN + "']").click()
+    comentarioCN = driver.find_element(By.XPATH, "//textarea[@aria-label='" + textoLabelcomentarioCN + "']")
     comentarioCN.clear()
     comentarioCN.send_keys(comentario)
     print('<<<<<<<<<<<<<<<< COMENTARIO INGRESADA >>>>>>>>>>>>>>>>>>><')
@@ -614,8 +614,8 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
 
     #Motivo del Cierre
     textoLabelmotivoCierreCN = 'Motivo del Cierre'
-    driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
-    motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
+    driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoCierreCN + "']").click()
+    motivoCierreCN = driver.find_element(By.XPATH, "//input[@aria-label='" + textoLabelmotivoCierreCN + "']")
     motivoCierreCN.clear()
     motivoCierreCN.send_keys('RAC INFORMA Y SOLUCIONA')
     motivoCierreCN.send_keys(Keys.RETURN)

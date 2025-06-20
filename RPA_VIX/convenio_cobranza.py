@@ -99,8 +99,8 @@ def montoPago(driver, engrane, mostrarColumnas, elementoAgregar, agregar, guarda
 
 def ingresoDatosAuto(driver, label, dato, tElemento, tEtiqueta,final):
     
-    driver.find_element_by_xpath(f"//{tElemento}[@{tEtiqueta}='" + label + "']").click()
-    elemento = driver.find_element_by_xpath(f"//{tElemento}[@{tEtiqueta}='" + label + "']")
+    driver.find_element(By.XPATH, f"//{tElemento}[@{tEtiqueta}='" + label + "']").click()
+    elemento = driver.find_element(By.XPATH, f"//{tElemento}[@{tEtiqueta}='" + label + "']")
     elemento.clear()
     elemento.send_keys(dato)
     elemento.send_keys(Keys.RETURN)
@@ -285,13 +285,13 @@ def obtencionValorClick(driver,accion,label, tElemento, tEtiqueta):
     
     if accion == True:
         
-        elemento = driver.find_element_by_xpath(f"//{tElemento}[@{tEtiqueta}='" + label + "']")
+        elemento = driver.find_element(By.XPATH, f"//{tElemento}[@{tEtiqueta}='" + label + "']")
         elemento = elemento.get_attribute("value")
         return elemento
 
     else:
 
-        driver.find_element_by_xpath(f"//{tElemento}[@{tEtiqueta}='" + label + "']").click()
+        driver.find_element(By.XPATH, f"//{tElemento}[@{tEtiqueta}='" + label + "']").click()
 
 
 

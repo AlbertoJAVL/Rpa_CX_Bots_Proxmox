@@ -44,10 +44,10 @@ def agregarDatos(driver, accion, dato, envio, tElemento, bElemento, labelBusqued
 
     try:
 
-        driver.find_element_by_xpath(f"//{tElemento}[@{bElemento}='" + labelBusqueda + "']").click()
+        driver.find_element(By.XPATH, f"//{tElemento}[@{bElemento}='" + labelBusqueda + "']").click()
 
         if accion == 'ingresar':
-            elemento = driver.find_element_by_xpath(f"//{tElemento}[@{bElemento}='" + labelBusqueda + "']")
+            elemento = driver.find_element(By.XPATH, f"//{tElemento}[@{bElemento}='" + labelBusqueda + "']")
             elemento.clear()
             elemento.send_keys(dato)
             elemento.send_keys(Keys.RETURN)
@@ -202,7 +202,7 @@ def cierrecN(driver, cn, movimiento):
             print(error)
             return False, error, ''
 
-        driver.find_element_by_xpath("/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/form/span/div/div[3]/div/div/div[3]/div[3]/div/div[2]/table/tbody/tr[2]/td[2]/a")
+        driver.find_element(By.XPATH, "/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/form/span/div/div[3]/div/div/div[3]/div[3]/div/div[2]/table/tbody/tr[2]/td[2]/a")
         sleep(10)
 
         insersion = agregarDatos(driver, 'click', cn, False, 'li', 'un', 'Actividades')
@@ -242,7 +242,7 @@ def validacionCN(driver, noCN):
         print('BUSCANDO CN')
         # driver.find_element(By.XPATH, casos_negocio['busqueda']).click()
         texto_boton ='Casos de negocio Applet de lista:Consulta'
-        driver.find_element_by_xpath("//button[@aria-label='" + texto_boton + "']").click()
+        driver.find_element(By.XPATH, "//button[@aria-label='" + texto_boton + "']").click()
             
 
 
@@ -250,7 +250,7 @@ def validacionCN(driver, noCN):
         sleep(2)
         try:
             texto_boton ='s_2_l_SR_Number s_2_l_altLink'
-            inputCN = driver.find_element_by_xpath("//input[@aria-labelledby='" + texto_boton + "']")
+            inputCN = driver.find_element(By.XPATH, "//input[@aria-labelledby='" + texto_boton + "']")
         except Exception as e:
             print(e)
             error='Error Busqueda CN'
