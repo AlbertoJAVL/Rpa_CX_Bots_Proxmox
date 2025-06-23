@@ -102,7 +102,7 @@ def __main__():
                                 status = error                            
                                 response = api.notDone_cerrado('-', info['id'], info['cuenta'], info['categoria'], info['motivos'], info['submotivos'], info['solucion'], info['motivoCliente'],info['comentarios'],info['estado'],info['cve_usuario'], info['fechaCompletado'], info['fechaCaptura'], status, '1', ip)
                                 print(response)
-                                if 'Warning' in error:
+                                if 'Warning' in error or 'Inconsistencia Siebel':
                                     driver.close()
                                     driver.quit()
                                     return False

@@ -553,7 +553,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
         #Categoria
         elemento_categoria, res = cargandoElemento(driver, 'input', 'aria-label', 'Categoria')
         if elemento_categoria == False: 
-            if 'No aplica' in res: return False, res, '-', '-'
+            if 'Inconsistencia Siebel'in res: return False, res, '-', '-'
             return False, 'Error Crear CN', '-', '-'
         
         categoriaCN = driver.find_element_by_xpath("//input[@aria-label='Categoria']")
@@ -565,7 +565,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
         #Motivo
         elemento_motivo, res = cargandoElemento(driver, 'input', 'aria-label', 'Motivo')
         if elemento_motivo == False: 
-            if 'No aplica' in res: return False, res, '-', '-'
+            if 'Inconsistencia Siebel'in res: return False, res, '-', '-'
             return False, 'Error Crear CN', '-', '-'
 
         motivoCN = driver.find_element_by_xpath("//input[@aria-label='Motivo']")
@@ -577,7 +577,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
         #Submotivo
         elemento_subMotivo, res = cargandoElemento(driver, 'input', 'aria-label', 'Submotivo')
         if elemento_subMotivo == False: 
-            if 'No aplica' in res: return False, res, '-', '-'
+            if 'Inconsistencia Siebel'in res: return False, res, '-', '-'
             return False, 'Error Crear CN', '-', '-'
         
         subMotivoCN = driver.find_element_by_xpath("//input[@aria-label='Submotivo']")
@@ -589,7 +589,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
         #Solucion
         elemento_solucion, res = cargandoElemento(driver, 'input', 'aria-label', 'Solución')
         if elemento_solucion == False:  
-            if 'No aplica' in res: return False, res, '-', '-'
+            if 'Inconsistencia Siebel'in res: return False, res, '-', '-'
             return False, 'Error Crear CN', '-', '-'
 
         solucionCN = driver.find_element_by_xpath("//input[@aria-label='Solución']")
@@ -601,7 +601,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
         #Motivo Cliente
         elemento_motivoCliente, res = cargandoElemento(driver, 'input', 'aria-label', 'Motivo Cliente')
         if elemento_motivoCliente == False: 
-            if 'No aplica' in res: return False, res, '-', '-'
+            if 'Inconsistencia Siebel'in res: return False, res, '-', '-'
             return False, 'Error Crear CN', '-', '-'
 
         motivoClienteCN = driver.find_element_by_xpath("//input[@aria-label='Motivo Cliente']")
@@ -617,7 +617,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
 
         elemento_, res = cargandoElemento(driver, 'textarea', 'aria-label', 'Comentarios')
         if elemento_ == False: 
-            if 'No aplica' in res: return False, res, '-', '-'
+            if 'Inconsistencia Siebel'in res: return False, res, '-', '-'
             return False, 'Error Crear CN', '-', '-'
         
         comentarioCN = driver.find_element_by_xpath("//textarea[@aria-label='Comentarios']")
@@ -628,7 +628,7 @@ def generacionCasoNegocio(driver, tipoCN, cuenta, motivoCliente):#50485788
         #Motivo del Cierre
         elemento_, res = cargandoElemento(driver, 'input', 'aria-label', 'Motivo del Cierre')
         if elemento_ == False: 
-            if 'No aplica' in res: return False, res, '-', '-'
+            if 'Inconsistencia Siebel'in res: return False, res, '-', '-'
             return False, 'Error Crear CN', '-', '-'
         
         motivoCierreCN = driver.find_element_by_xpath("//input[@aria-label='Motivo del Cierre']")
