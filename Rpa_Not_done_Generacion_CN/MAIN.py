@@ -81,14 +81,14 @@ def __main__():
                     ip = socket.gethostbyname(host)
                     if info != 'SIN INFO':
 
-                        numeroCuenta = info['cuenta']
-                        categoria = info['categoria']
-                        motivos = info['motivos']
-                        subMotivo = info['submotivos']
-                        solucion = info['solucion']
-                        motivoCliente = info['motivoCliente']
-                        comentarios = info['comentarios']
-                        estado = info['estado']
+                        numeroCuenta = info['cuenta'].strip()
+                        categoria = info['categoria'].strip()
+                        motivos = info['motivos'].strip()
+                        subMotivo = info['submotivos'].strip()
+                        solucion = info['solucion'].strip()
+                        motivoCliente = info['motivoCliente'].strip()
+                        comentarios = info['comentarios'].strip()
+                        estado = info['estado'].strip()
 
                         if len(motivoCliente) == 0:
                             status = 'Error Sin Motivo Cliente'

@@ -82,10 +82,10 @@ def __main__():
                     host = socket.gethostname()
                     ip = socket.gethostbyname(host)
                     if info != 'SIN INFO':
-                        numeroOrden = info['numeroOrden']
-                        numeroCuenta = info['cuenta']
-                        motivoCliente = info['resultadoLlamada']
-                        fechaCaptura = info['fechaCaptura']
+                        numeroOrden = info['numeroOrden'].strip()
+                        numeroCuenta = info['cuenta'].strip()
+                        motivoCliente = info['resultadoLlamada'].strip()
+                        fechaCaptura = info['fechaCaptura'].strip()
 
                         fechaCaptura = fechaCaptura.replace("T", " ")
                         horaActual = datetime.now().time()

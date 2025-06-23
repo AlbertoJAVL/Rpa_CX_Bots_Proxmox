@@ -85,8 +85,8 @@ def __main__():
                     host = socket.gethostname()
                     ip = socket.gethostbyname(host)
                     if info != 'SIN INFO':
-                        numeroOrden = info['numeroOrden']
-                        comentario = info['comentariosOs']
+                        numeroOrden = info['numeroOrden'].strip()
+                        comentario = info['comentariosOs'].strip()
                         motivocliente = 'Cliente no contactado'
 
                         if len(comentario) == 0:
