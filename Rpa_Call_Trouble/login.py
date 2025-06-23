@@ -13,6 +13,7 @@ from utileria import *
 # ----------SYSTEM -------------------
 from time import sleep
 import win32clipboard as cp
+import os
 
 #-----------OTRAS--------------------
 from json.decoder import JSONDecodeError
@@ -31,6 +32,13 @@ def start_webdriver():
         - driver: instancia de google chrome
     '''
     try:
+
+        try:
+            os.system(f"taskkill /f /im chrome.exe")
+            os.system(f"taskkill /f /im chrome.exe")
+            os.system(f"taskkill /f /im chrome.exe")
+        except Exception as e:
+            pass
         
         options = webdriver.ChromeOptions()
         options.add_experimental_option('excludeSwitches', ['enable-logging'])

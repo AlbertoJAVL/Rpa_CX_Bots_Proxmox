@@ -14,6 +14,7 @@ import Services.ApiCyberHubOrdenes as api
 from time import sleep
 import win32clipboard as cp
 import socket, logging
+import os 
 
 #-----------OTRAS--------------------
 from json.decoder import JSONDecodeError
@@ -29,6 +30,12 @@ def start_webdriver():
         - driver: instancia de google chrome
     '''
     try:
+        try:
+            os.system(f"taskkill /f /im chrome.exe")
+            os.system(f"taskkill /f /im chrome.exe")
+            os.system(f"taskkill /f /im chrome.exe")
+        except Exception as e:
+            pass
         
         opts = webdriver.ChromeOptions()
         opts.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -67,6 +74,7 @@ def login_siebel(user, password):
     driver  = start_webdriver()
     driver.maximize_window()
     try:
+        
         driver.get(SIEBEL)
         act = webdriver.ActionChains(driver)
         sleep(3)

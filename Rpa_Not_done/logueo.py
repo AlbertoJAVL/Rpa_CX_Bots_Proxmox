@@ -20,7 +20,7 @@ import win32clipboard as cp
 #-----------OTRAS--------------------
 from json.decoder import JSONDecodeError
 import socket
-
+import os
 ERROR = "HA OCURRIDO UN ERROR EN LA FUNCION "
 SIEBEL = 'https://crm.izzi.mx/siebel/app/ecommunications/esn'
 
@@ -32,6 +32,12 @@ def start_webdriver():
         - driver: instancia de google chrome
     '''
     try:
+        try:
+            os.system(f"taskkill /f /im chrome.exe")
+            os.system(f"taskkill /f /im chrome.exe")
+            os.system(f"taskkill /f /im chrome.exe")
+        except Exception as e:
+            pass
         
         options = webdriver.ChromeOptions()
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
