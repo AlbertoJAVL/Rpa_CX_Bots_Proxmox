@@ -45704,3 +45704,2724 @@ TypeError: 'NoneType' object is not subscriptable
 2025-06-23 10:36:11,173 [INFO] Orden 537524 procesada OK
 2025-06-23 10:46:28,744 [INFO] Orden 539667 procesada OK
 2025-06-23 11:03:15,545 [INFO] Orden 539859 procesada OK
+2025-06-24 12:40:36,074 [INFO] Orden 542954 procesada OK
+2025-06-24 12:51:45,476 [INFO] Orden 542963 procesada OK
+2025-06-24 13:13:20,323 [INFO] Orden 543026 procesada OK
+2025-06-24 13:15:38,851 [INFO] Orden 543099 procesada OK
+2025-06-24 13:17:50,006 [INFO] Orden 543110 procesada OK
+2025-06-24 15:37:14,425 [INFO] Orden 543118 procesada OK
+2025-06-24 15:39:12,664 [INFO] Orden 543641 procesada OK
+2025-06-24 15:46:17,850 [INFO] Orden 543655 procesada OK
+2025-06-24 16:02:52,796 [INFO] Orden 543682 procesada OK
+2025-06-24 16:19:13,913 [INFO] Orden 543724 procesada OK
+2025-06-24 18:38:19,754 [INFO] Orden 544882 procesada OK
+2025-06-24 18:47:46,914 [INFO] Orden 544905 procesada OK
+2025-06-24 18:54:16,706 [INFO] Orden 544954 procesada OK
+2025-06-24 19:06:49,345 [INFO] Orden 545002 procesada OK
+2025-06-24 19:14:46,524 [INFO] Orden 544973 procesada OK
+2025-06-24 21:04:00,405 [INFO] Orden 545104 procesada OK
+2025-06-24 21:06:52,938 [INFO] Orden 545604 procesada OK
+2025-06-24 22:09:51,729 [INFO] Orden 545616 procesada OK
+2025-06-24 22:09:52,541 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:09:57,541 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:00,799 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:04,136 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:07,464 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:11,152 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:21,463 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:32,245 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:42,509 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:10:54,134 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:11:05,888 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:11:14,992 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:11:24,085 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:11:39,761 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:11:49,989 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:12:06,444 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:12:29,581 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:12:49,235 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:13:05,001 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:13:35,763 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:13:55,839 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:14:14,996 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:14:35,306 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:14:54,216 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:15:23,054 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:15:53,239 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:16:12,800 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:16:34,697 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:16:57,994 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:17:19,357 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:17:40,636 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:18:06,371 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:18:41,826 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:19:14,527 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:19:48,190 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:20:12,346 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:20:37,624 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:21:04,888 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:21:26,464 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:21:55,453 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:22:23,666 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:22:45,647 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:23:09,864 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:23:39,268 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:24:04,397 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:24:40,474 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:25:03,530 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:25:22,239 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:25:49,962 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:26:10,494 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:26:43,944 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:27:10,569 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:27:32,682 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:27:56,804 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:28:22,195 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:28:49,974 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:29:19,098 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:29:48,829 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:30:21,607 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:30:42,621 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:31:02,595 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:31:29,752 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:31:54,109 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:32:18,107 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:32:41,279 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:33:10,414 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:33:39,900 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:33:58,663 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:34:23,589 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:34:47,723 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:35:17,299 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:35:48,648 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:36:11,052 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:36:38,627 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:37:01,280 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:37:24,204 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:37:47,591 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:38:15,980 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:38:41,203 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:39:05,104 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:39:28,772 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:39:52,629 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:40:17,510 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:40:38,391 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:41:05,334 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:41:25,364 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:41:46,489 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:42:14,626 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:42:34,453 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:42:58,519 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:43:22,779 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:43:48,448 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:44:18,321 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:44:40,241 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:45:02,381 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:45:34,020 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:45:58,893 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:46:22,289 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:46:47,277 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:47:09,724 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:47:29,285 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:47:47,128 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:48:14,391 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:18,407 [INFO] Orden 545015 procesada OK
+2025-06-24 22:49:23,475 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:27,657 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:31,346 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:35,346 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:39,112 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:43,096 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:47,002 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:50,768 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:49:58,013 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:01,372 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:09,701 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:13,060 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:16,474 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:25,609 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:28,874 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:36,999 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:45,530 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:50:54,575 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:03,513 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:11,966 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:18,408 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:26,369 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:31,790 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:39,681 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:42,915 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:50,747 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:51:54,070 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:02,773 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:06,304 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:09,601 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:19,414 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:28,662 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:35,318 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:45,662 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:52:54,333 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:53:13,284 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:53:28,405 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:53:45,226 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:54:01,997 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:54:21,880 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:54:39,394 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:55:00,441 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:55:21,703 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:56:53,404 [INFO] Orden 544251 procesada OK
+2025-06-24 22:57:17,054 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:57:39,074 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:58:02,134 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:58:26,494 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:58:52,062 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:59:17,769 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 22:59:41,235 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:00:04,176 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:00:27,092 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:00:59,276 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:01:22,979 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:01:56,664 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:02:32,708 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:03:04,433 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:03:28,664 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:04:01,756 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:04:24,120 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:04:45,509 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:05:15,151 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:05:44,133 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:06:08,616 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:06:31,289 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:06:58,510 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:07:30,039 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:07:59,616 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:08:26,848 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:08:53,674 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:09:22,476 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:09:45,882 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:10:12,208 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:10:36,206 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:11:10,041 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:11:30,060 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:11:51,107 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:12:17,246 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:12:46,196 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:13:00,087 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:13:19,255 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:13:38,549 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:14:08,274 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:14:32,211 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-24 23:30:41,604 [INFO] Orden 545949 procesada OK
+2025-06-24 23:44:14,881 [INFO] Orden 545982 procesada OK
+2025-06-25 00:55:18,723 [INFO] Orden 546055 procesada OK
+2025-06-25 00:55:27,605 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:55:37,449 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:55:48,858 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:56:02,936 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:56:13,747 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:56:32,934 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:56:49,493 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:57:12,539 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:57:16,232 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:57:24,788 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:57:38,459 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:57:56,926 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:58:11,942 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:58:27,420 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:58:42,983 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 00:58:58,327 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:00:15,944 [INFO] Orden 546338 procesada OK
+2025-06-25 01:00:32,971 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:01:02,846 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:01:34,574 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:01:49,695 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:02:15,132 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:02:39,025 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:03:08,433 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:03:30,783 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:03:55,208 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:04:17,201 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:04:46,402 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:05:04,782 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:05:20,922 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:05:52,695 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:06:24,566 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:06:42,923 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:12:15,431 [INFO] Orden 546336 procesada OK
+2025-06-25 01:12:45,492 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:13:15,935 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:13:50,837 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:14:21,405 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:14:44,918 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:15:11,090 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 01:15:41,057 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:38:03,801 [INFO] Orden 546346 procesada OK
+2025-06-25 06:38:19,419 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:38:39,510 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:38:58,807 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:39:16,907 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:39:35,797 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:40:00,998 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:40:22,255 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:40:47,836 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:41:19,311 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:41:54,676 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:42:31,613 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:42:52,175 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:43:27,722 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:43:53,076 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:44:14,511 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:44:43,961 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:45:16,209 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:45:37,949 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:46:02,880 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:46:34,323 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:46:58,194 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:47:29,363 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:47:58,908 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:48:26,374 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:48:59,684 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:49:24,604 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:49:48,260 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:50:20,836 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:50:49,880 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:51:21,784 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:51:40,563 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:52:01,801 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:52:35,870 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:52:55,769 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:53:27,095 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:54:00,202 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:54:34,997 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:54:55,713 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:55:26,547 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:55:59,249 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:56:28,027 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:56:59,024 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:57:22,243 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:57:54,256 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:58:25,629 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:58:57,259 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 06:59:32,507 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:00:09,751 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:00:39,522 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:01:05,072 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:01:29,147 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:01:52,222 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:02:23,611 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:02:54,748 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:03:15,954 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:03:42,747 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:04:10,495 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:04:30,664 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:05:00,825 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:05:36,800 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:06:14,408 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:06:34,955 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:06:55,359 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:07:17,949 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:07:38,042 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:08:00,650 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:08:22,459 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:08:49,754 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:09:23,306 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:09:47,087 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:10:07,695 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:10:25,482 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:10:59,057 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:11:33,071 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:11:53,821 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:12:29,084 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:13:02,254 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:13:32,861 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:14:04,765 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:14:32,841 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:14:53,808 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:15:22,149 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:15:55,108 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:16:21,926 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:16:43,411 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:17:06,423 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:17:28,421 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:17:48,140 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:18:09,856 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:18:45,635 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:19:02,899 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:19:23,352 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:19:54,881 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:20:15,800 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:20:48,314 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:21:20,889 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:21:39,998 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:21:57,981 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:22:32,009 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:23:04,023 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:23:32,052 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:23:50,349 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:24:22,362 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:24:46,563 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:25:20,114 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:25:40,182 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:26:17,120 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:26:36,108 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:26:56,149 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:27:26,177 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:27:55,471 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:28:33,360 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:29:04,194 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:29:35,644 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:30:08,298 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:30:31,031 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:30:59,293 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:31:18,622 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:31:51,620 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:32:15,369 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:32:38,130 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:33:04,181 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:33:28,988 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:33:54,596 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:34:23,045 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:34:54,137 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:35:15,065 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:35:40,713 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:36:12,178 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:36:45,380 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:37:04,558 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:37:28,227 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:37:59,725 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:38:30,942 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:38:54,957 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:39:31,940 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:39:56,265 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:40:24,292 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:40:53,604 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:41:14,555 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:41:36,211 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:41:53,116 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:42:13,319 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:42:50,009 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:43:11,447 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:43:43,539 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:44:16,054 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:44:45,556 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:45:16,367 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:45:41,193 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:46:05,221 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:46:33,083 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:47:05,425 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:47:34,607 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:48:02,230 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:48:29,900 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:48:49,538 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:49:09,975 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
+2025-06-25 07:49:33,270 [ERROR] Excepción no controlada: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 301, in main
+    ok = ejecutar_ciclo()
+  File "C:\Rpa_CX_Bots_Proxmox\Rpa_Ajustes_SV\main.py", line 48, in ejecutar_ciclo
+    orden = api.get_orden_servicio()[0]
+TypeError: 'NoneType' object is not subscriptable
