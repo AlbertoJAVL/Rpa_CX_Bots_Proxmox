@@ -210,7 +210,10 @@ def generacionCN(driver, cn, ajuste):
         sleep(5)
         pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
         posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
-        if posicion == False: return False, 'Error Pantalla NO Carga', '-'
+        if posicion == False: 
+            pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[16]/li[{contador}]/div'
+            posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+            if posicion == False: return False, 'Error Pantalla NO Carga', '-'
         driver.find_element(By.XPATH, pathEstadoCNOpc.replace('{contador}', posicion)).click()
         sleep(5)
 

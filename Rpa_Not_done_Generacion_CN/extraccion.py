@@ -634,8 +634,11 @@ def generacionCasoNegocio(driver, cuenta, categoria, motivos, subMotivo, solucio
     driver.find_element(By.XPATH, '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/div/form/div/span/div[3]/div/div/table/tbody/tr[4]/td[5]/div/span').click()
     sleep(5)
     pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
-    posicion = obtencionColumna(driver, valEstado, pathEstadoCNOpc)
-    if posicion == False: return False, 'Error Pantalla NO Carga', '-'
+    posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+    if posicion == False: 
+        pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[16]/li[{contador}]/div'
+        posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+        if posicion == False: return False, 'Error Pantalla NO Carga', '-'
     driver.find_element(By.XPATH, pathEstadoCNOpc.replace('{contador}', posicion)).click()
     sleep(5)
     

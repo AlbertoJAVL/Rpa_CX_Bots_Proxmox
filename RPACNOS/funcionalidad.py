@@ -519,8 +519,12 @@ def inicio(driver, cuenta, comentario, os):
         sleep(5)
         driver.find_element(By.XPATH, "//span[@id='s_1_1_143_0_icon']").click()
         sleep(5)
-        posicion = obtencionColumna(driver, 'Cerrado', pathEstado)
-        if posicion == False: return 'Error Pantalla NO Carga'
+        pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[17]/li[{contador}]/div'
+        posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+        if posicion == False: 
+            pathEstadoCNOpc = '/html/body/div[1]/div/div[5]/div/div[8]/ul[16]/li[{contador}]/div'
+            posicion = obtencionColumna(driver, 'Cerrado', pathEstadoCNOpc)
+            if posicion == False: return 'Error Pantalla NO Carga'
         driver.find_element(By.XPATH, pathEstado.replace('{contador}', posicion)).click()
 
         sleep(3)
