@@ -388,7 +388,7 @@ def ajusteTipificado(driver, convenio, fecha, fechaCompletado):
     pathColumnasBAInput3 = '/html/body/div[1]/div/div[5]/div/div[8]/div[2]/div[1]/div/div[2]/div[2]/div[3]/div/div/div/form/span/div/div[3]/div/div/div[3]/div[3]/div/div[2]/table/tbody/tr[2]/td[{contador}]/input'
 
     fechaN = fecha.replace("T", " ")
-    fechaN = datetime.strptime(fechaN, "%Y-%m-%d %H:%M:%S").date()
+    fechaN = datetime.strptime(fechaN, "%Y-%m-%d %H:%M:%S").date() - timedelta(days=1)
     fechaN = fechaN.strftime("%d/%m/%Y")
     rangoFechaBusqueda = f">= '{fechaN}'"
 
