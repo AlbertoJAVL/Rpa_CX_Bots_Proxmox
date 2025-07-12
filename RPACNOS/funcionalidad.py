@@ -18,19 +18,34 @@ def cargandoElemento(driver, elemento, atributo, valorAtributo, path = False):
 
         sleep(1)
         try: 
-            
-            if path == False: 
-                driver.find_element(By.XPATH, f"//{elemento}[@{atributo}='{valorAtributo}']").click()
-                return True
-            else: 
-                print('aqui')
-                driver.find_element(By.XPATH, path).click()
-                return True
-            
-        
-        except:
+
             contador += 1
-            if contador == 60: return False
+            print('Validando posible warning')
+            alert = Alert(driver)
+            alert_txt = alert.text
+            print(f'{alert_txt}')
+            if ('FTTH' in alert_txt.upper()
+                or 'No se ha recibido el certificado' in alert_txt):
+                alert.accept()
+                print('Alert Cerrado')
+
+                if 'No se ha recibido el certificado' in alert_txt: return 'Error Certificado Wifi'
+            else: return f'Error Siebel: {alert_txt}'
+
+        except:
+            try:
+                print('Esperando a que elelemento cargue')
+            
+                if path == False: 
+                    driver.find_element(By.XPATH, f"//{elemento}[@{atributo}='{valorAtributo}']").click()
+                    return True
+                else: 
+                    print('aqui')
+                    driver.find_element(By.XPATH, path).click()
+                    return True
+            except:
+                print('Pantalla Cargando')
+                if contador == 60: return 'Error Pantalla NO Carga'
 
 def obtencionColumna(driver, nombreColumna, path):
 
@@ -150,7 +165,7 @@ def busquedaOS(driver, limiteInferior, limiteSuperior, tipoOS, cuenta):
     
     # Buscando Elemento
     lupa_busqueda_cuenta = cargandoElemento(driver, 'button', 'title', 'Pantalla Única de Consulta Applet de formulario:Consulta')
-    if lupa_busqueda_cuenta == False: return False, 'Error Pantalla NO Carga'
+    if lupa_busqueda_cuenta != True: return False, 'Error Pantalla NO Carga'
     sleep(5)
 
     # Ingreso Cuenta
@@ -163,7 +178,7 @@ def busquedaOS(driver, limiteInferior, limiteSuperior, tipoOS, cuenta):
 
     # Cargando Cuenta
     lupa_busqueda_cuenta = cargandoElemento(driver, 'span', 'id', 'Saldo_Vencido_Label_12')
-    if lupa_busqueda_cuenta == False: return False, 'Error Pantalla NO Carga'
+    if lupa_busqueda_cuenta != True: return False, 'Error Pantalla NO Carga'
     print('♥ Cuenta OK! ♥')
     sleep(5)
 
@@ -256,13 +271,13 @@ def validacionSubEstado(driver, os):
 
         # Pantalla Consulta (Click)
         lupa_busqueda_os = cargandoElemento(driver, 'a', 'title', 'Ordenes de Servicio')
-        if lupa_busqueda_os == False: return 'Error Pantalla NO Carga'
+        if lupa_busqueda_os != True: return 'Error Pantalla NO Carga'
         # driver.find_element(By.XPATH, "//a[@title='Ordenes de Servicio']").click()
         
         # Buscando Elemento
         print('→ Cargando Pantalla busqueda OS')
         lupa_busqueda_os = cargandoElemento(driver, 'button', 'title', 'Ordenes de servicio Applet de lista:Consulta')
-        if lupa_busqueda_os == False: return 'Error Pantalla NO Carga'
+        if lupa_busqueda_os != True: return 'Error Pantalla NO Carga'
         sleep(5)
 
         # Ingreso OS
@@ -313,13 +328,13 @@ def cierreOS(driver, os):
 
         # Pantalla Consulta (Click)
         lupa_busqueda_os = cargandoElemento(driver, 'a', 'title', 'Ordenes de Servicio')
-        if lupa_busqueda_os == False: return 'Error Pantalla NO Carga'
+        if lupa_busqueda_os != True: return 'Error Pantalla NO Carga'
         # driver.find_element(By.XPATH, "//a[@title='Ordenes de Servicio']").click()
         
         # Buscando Elemento
         print('→ Cargando Pantalla busqueda OS')
         lupa_busqueda_os = cargandoElemento(driver, 'button', 'title', 'Ordenes de servicio Applet de lista:Consulta')
-        if lupa_busqueda_os == False: return 'Error Pantalla NO Carga'
+        if lupa_busqueda_os != True: return 'Error Pantalla NO Carga'
         sleep(5)
 
         # Ingreso OS
@@ -352,7 +367,9 @@ def cierreOS(driver, os):
         input_subestado.send_keys(Keys.RETURN)
         print('♦ Campo Sub Estado ♦')
 
-        driver.find_element(By.XPATH, "//input[@aria-label='Estado']").click()
+        # driver.find_element(By.XPATH, "//input[@aria-label='Estado']").click()
+        lupa_busqueda_os = cargandoElemento(driver, 'input', 'aria-label', 'Estado')
+        if lupa_busqueda_os != True: return lupa_busqueda_os
         sleep(1)
         driver.find_element(By.XPATH, "//button[@aria-label='Orden de servicio Applet de formulario:Guardar']").click()
 
@@ -398,7 +415,7 @@ def inicio(driver, cuenta, comentario, os):
 
         # Cargando Cuenta
         lupa_busqueda_cuenta = cargandoElemento(driver, 'span', 'id', 'Saldo_Vencido_Label_12')
-        if lupa_busqueda_cuenta == False: return 'Error Pantalla NO Carga'
+        if lupa_busqueda_cuenta != True: return 'Error Pantalla NO Carga'
         print('♥ Cuenta OK! ♥')
         sleep(5)
 
